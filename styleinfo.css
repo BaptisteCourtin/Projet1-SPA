@@ -69,6 +69,11 @@ input {
     border: 1px solid grey;
 }
 
+h3 {
+    color: var(--dark);
+    font-family: 'lora', serif;
+}
+
 @media screen and (min-width: 700px) {
     form {
         width: 50vw;
