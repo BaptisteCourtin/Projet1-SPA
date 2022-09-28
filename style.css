@@ -29,8 +29,8 @@ li {
     list-style-type: none;
 }
 
-body{
-    height: 8000px;
+body {
+    /*height: 8000px;*/
     color: var(--dark);
     background-color: var(--light);
     font-family: sans-serif;
@@ -40,7 +40,7 @@ body{
 /* --------------------------------- */
 /* --------------------------------- */
 
-.logo{
+.logo {
     font-family: 'MedievalSharp', sans-serif;
     font-style: italic;
     font-weight: 700;
@@ -59,13 +59,13 @@ header {
     /* inset: 1em 1em auto 1em; */
 }
 
-.nav-flex{
+.nav-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-flex .logo{
+.nav-flex .logo {
     display: none;
 }
 
@@ -135,7 +135,7 @@ body.opened .fa-xmark {
 /* ------------bot-navbar----------- */
 /* --------------------------------- */
 
-section.bot-navbar{
+section.bot-navbar {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -151,11 +151,11 @@ section.bot-navbar{
 /* --------------footer------------- */
 /* --------------------------------- */
 
-footer{
+footer {
     margin: 3rem 20%;
     padding: 1.5rem;
     border-top: 2px solid var(--dark);
-    
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -163,11 +163,11 @@ footer{
     gap: 1rem;
 }
 
-footer .copyright{
+footer .copyright {
     font-size: 0.6rem;
 }
 
-footer .icons-applis{
+footer .icons-applis {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -196,33 +196,38 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 */
 
 @media screen and (min-width: 1200px) {
+
     /* ---header--- */
-    header{
+    header {
         background-color: var(--blue);
         opacity: 0.7;
 
         position: absolute;
         top: 0;
         left: 0;
-        right: 0;  
+        right: 0;
     }
-    .nav-flex{
+
+    .nav-flex {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
-    .nav-flex .logo{
+
+    .nav-flex .logo {
         display: block;
     }
 
-    header .mobile-nav-toggle{
+    header .mobile-nav-toggle {
         display: none;
     }
-    header .side-nav{
+
+    header .side-nav {
         display: block;
     }
-    header .side-nav ul{
+
+    header .side-nav ul {
         display: flex;
         flex-direction: row;
         gap: 3rem;
@@ -231,14 +236,10 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
 
     /* ---footer--- */
-    section.bot-navbar{
+    section.bot-navbar {
         display: none;
     }
 
 
 
 }
-
-
-
-
