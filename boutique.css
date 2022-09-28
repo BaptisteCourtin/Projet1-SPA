@@ -1,0 +1,58 @@
+:root {
+    --dark: #0d0106;
+    --darkblue: #3626a7;
+    --blue: #657ed4;
+    --red: #ff331f;
+    --light: #fbfbfb;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.individuel .images {
+    height: 25vh;
+    width: 70%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+img {
+    height: 100%;
+}
+
+h3 {
+    font-family:'lora', serif;
+    margin: 0;
+}
+
+.individuel {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+
+}
+
+.produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.descriptif {
+    width: 100%;
+}
+
+p {
+    margin: 3px;
+}
+
+.buttons {
+    width: 50%;
+    margin: 5% auto;
+}

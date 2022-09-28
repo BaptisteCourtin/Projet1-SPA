@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
 
 :root {
     --dark: #0d0106;
@@ -30,7 +30,6 @@ li {
 }
 
 body{
-    height: 8000px;
     color: var(--dark);
     background-color: var(--light);
     font-family: sans-serif;
