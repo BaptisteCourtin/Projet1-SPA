@@ -227,6 +227,10 @@ footer {
     gap: 1rem;
 }
 
+footer nav{
+    display: none;
+}
+
 footer .icons-applis {
     display: flex;
     align-items: center;
@@ -370,21 +374,26 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 3rem;
     }
 
-    footer .side-nav {
+    footer nav {
         display: block;
     }
 
-    footer .side-nav ul {
+    footer nav ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 3rem;
+        gap: 4rem;
     }
 
+    footer nav ul li{
+        width: 100%;
+        text-align: center;
+        border-top: none;
+    }
 
     /* --------------ACCEUIL------------ */
     main {
