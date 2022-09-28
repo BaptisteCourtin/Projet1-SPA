@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.hero {
+    color: white;
+    background-image: url("assets/piscine4.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
+
+.soins .image {
+    max-width: 40vw;
+    border-radius: 1.5ch;
+    overflow: hidden;
+}
+
+.soins img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 10% 20%;
+
+}
+
+.massage2 {
+
+    max-height: 35vh;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding: 25px;
+
+}
+
+.border {
+    border-bottom: 0.5px solid darkcyan;
+    border-top: 0.5px solid darkcyan;
+    margin-left: 25vw;
+    margin-right: 25vw;
+
+}
+
+.massage1,
+.massage3 {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+
+}
+
+.massage3 {
+    margin-bottom: ;
+}
+
+.massage1 {
+    margin-top: ;
+}
+
+p {
+    padding-left: 10px;
+    margin-bottom: 70px;
+    height: 100px;
+    overflow: scroll;
+}
+
+.panier {
+    width: max-content;
+    margin: 10px;
+
+}
+
+@media screen and (min-width: 900px) {
+    .hero {
+        color: white;
+        background-image: url("assets/piscine4.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+    }
+
+    .soins .image {
+        max-width: 60vw;
+        border-radius: 1.5ch;
+        overflow: hidden;
+    }
+
+    .soins img {
+        width: 100%;
+        object-fit: cover;
+        object-position: 10% 20%;
+
+    }
+
+    .massage2 {
+
+        max-height: 35vh;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding: 25px;
+
+    }
+
+    .border {
+        border-bottom: 0.5px solid darkcyan;
+        border-top: 0.5px solid darkcyan;
+        margin-left: 25vw;
+        margin-right: 25vw;
+
+    }
+
+    .massage1,
+    .massage3 {
+        display: flex;
+        flex-direction: row;
+        padding: 25px;
+        max-height: 35vh;
+    }
+
+    .massage3 {
+        margin-bottom: 50px;
+    }
+
+    .massage1 {
+        margin-top: 50px;
+    }
+
+    p {
+        padding: 10px;
+        margin-top: 35px;
+        margin-bottom: 70px;
+    }
+
+    .textbuy {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .textbuy .buy2 {
+        display: flex;
+        flex-direction: column;
+        justify-items: left;
+    }
+
+    .panier {
+        width: max-content;
+        margin: 10px;
+
+    }
+
+}
