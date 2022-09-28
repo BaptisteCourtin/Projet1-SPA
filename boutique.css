@@ -8,6 +8,7 @@
 
 body{
     font-family: sans-serif;
+    color: ;
 }
 
 .individuel .images {
@@ -18,6 +19,8 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 10%;
+    box-shadow: 10px 5px 5px var(--dark);
+
 }
 
 img {
@@ -32,7 +35,7 @@ h3 {
 .individuel {
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content:start;
     gap: 1rem;
 
 }
@@ -44,8 +47,15 @@ h3 {
     gap: 2rem;
 }
 
-.descriptif {
+.descriptif1 {
     width: 100%;
+    padding: 15px 3px 5px 3px;
+}
+
+.descriptif2 {
+    width: 100%;
+    padding: 15px 3px 5px 3px;
+    text-align: end;
 }
 
 p {
@@ -55,4 +65,9 @@ p {
 .buttons {
     width: 50%;
     margin: 5% auto;
+    padding: 25px 10px 15px 0px;
+}
+
+section {
+    padding: 7px 0px 7px;
 }
