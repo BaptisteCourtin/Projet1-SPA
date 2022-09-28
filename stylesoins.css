@@ -4,77 +4,68 @@
 
 }
 
-.hero {
-    color: white;
-    background-image: url("assets/piscine4.jpg");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35vh;
-}
+@media screen and (min-width: 300px) and (max-width :900px) {
+    .hero {
+        color: white;
+        background-image: url("assets/piscine4.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+    }
 
-.soins .image {
-    max-width: 40vw;
-    border-radius: 1.5ch;
-    overflow: hidden;
-}
+    .soins .image {
+        max-width: 40vw;
+        overflow: hidden;
+    }
 
-.soins img {
-    width: 100%;
-    object-fit: cover;
-    object-position: 10% 20%;
+    .soins img {
+        border-radius: 1.5ch;
+        width: 100%;
+        object-fit: cover;
 
-}
+    }
 
-.massage2 {
 
-    max-height: 35vh;
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 10px;
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding: 25px;
 
-}
+    .border {
+        border-bottom: 0.5px solid #00002e;
+        border-top: 0.5px solid #00002e;
+        margin-left: 25vw;
+        margin-right: 25vw;
 
-.border {
-    border-bottom: 0.5px solid darkcyan;
-    border-top: 0.5px solid darkcyan;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    }
 
-}
+    .massage1,
+    .massage2,
+    .massage3 {
+        display: flex;
+        flex-direction: row;
+        padding: 25px;
 
-.massage1,
-.massage3 {
-    display: flex;
-    flex-direction: row;
-    padding: 25px;
+    }
 
-}
+    p {
+        padding-left: 10px;
+        margin-bottom: 70px;
+        height: max-content;
+        overflow: scroll;
+        margin-bottom: 0;
+    }
 
-.massage3 {
-    margin-bottom: ;
-}
+    .panier {
+        width: max-content;
+        margin: 10px;
 
-.massage1 {
-    margin-top: ;
-}
+    }
 
-p {
-    padding-left: 10px;
-    margin-bottom: 70px;
-    height: 100px;
-    overflow: scroll;
-}
-
-.panier {
-    width: max-content;
-    margin: 10px;
-
+    .textbuy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -92,6 +83,7 @@ p {
         max-width: 60vw;
         border-radius: 1.5ch;
         overflow: hidden;
+        box-shadow: 5px 9px 11px 0px #A6A6A6;
     }
 
     .soins img {
@@ -115,8 +107,8 @@ p {
     }
 
     .border {
-        border-bottom: 0.5px solid darkcyan;
-        border-top: 0.5px solid darkcyan;
+        border-bottom: 0.5px solid #00002e;
+        border-top: 0.5px solid #00002e;
         margin-left: 25vw;
         margin-right: 25vw;
 
@@ -141,26 +133,20 @@ p {
     p {
         padding: 10px;
         margin-top: 35px;
-        margin-bottom: 70px;
+        text-align: center;
     }
 
     .textbuy {
         display: flex;
         flex-direction: column;
-    }
-
-
-
-    .textbuy .buy2 {
-        display: flex;
-        flex-direction: column;
-        justify-items: left;
+        justify-content: center;
+        align-items: center;
     }
 
     .panier {
         width: max-content;
         margin: 10px;
+        display: flex;
 
     }
-
 }
