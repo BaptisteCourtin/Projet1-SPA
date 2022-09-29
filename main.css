@@ -1,0 +1,95 @@
+/* --------------------------------- */
+/* --------------ACCEUIL------------ */
+/* --------------------------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+}
+
+main a {
+    width: calc(100% - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .img {
+    color: var(--light);
+    text-shadow: 3px 3px 2px var(--dark);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px var(--dark);
+
+    width: 100%;
+    height: 9rem;
+}
+
+main .img1 {
+    background: url(./assets/piscine5.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+main .img2 {
+    background: url(./assets/massage4.jpg) 50% 53% no-repeat;
+    background-size: cover;
+}
+
+main .img3 {
+    background: url(./assets/produit10.jpg) 50% 28% no-repeat;
+    background-size: cover;
+}
+
+
+/* --------------------------------- */
+/* -------------Animation----------- */
+/* --------------------------------- */
+
+main a .img:hover{
+    transform: scale(1.05);
+}
+
+main a .img{
+    transition: 0.5s ease-in-out;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+
+    /* --------------ACCEUIL------------ */
+    main {
+        margin-top: 3rem;
+        gap: 3rem;
+    }
+
+    main .img {
+        height: 13rem;
+        width: calc(100% - 10rem);
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+

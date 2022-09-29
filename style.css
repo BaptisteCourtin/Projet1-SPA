@@ -61,7 +61,7 @@ header {
     top: 1em;
     left: 1em;
     right: 1em;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .nav-flex {
@@ -78,7 +78,7 @@ button.mobile-nav-toggle {
     cursor: pointer;
     border: none;
     padding: 0.2em;
-    z-index: 1000;
+    z-index: 10;
     font-size: 1.5rem;
 
     width: 2.5rem;
@@ -100,7 +100,7 @@ button.mobile-nav-toggle {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
-    z-index: 990;
+    z-index: 9;
 }
 
 body.opened::before {
@@ -108,7 +108,6 @@ body.opened::before {
     position: fixed;
     inset: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
-    z-index: -1;
 }
 
 .side-nav ul {
@@ -122,7 +121,8 @@ body.opened::before {
 .side-nav ul li {
     width: 100%;
     text-align: center;
-    border-top: 2px solid var(--dark);
+    border-top: 2px solid var(--darkblue);
+    font-size: 1.2rem;
 }
 
 .side-nav ul li:first-child {
@@ -134,7 +134,13 @@ body.opened::before {
     padding: 0em 0.5em;
 }
 
-header .fa-user {
+header .side-right{
+    display: flex;
+    gap: 1rem;
+}
+
+header .side-right .fa-user,
+header .side-right .fa-cart-shopping {
     background-color: var(--light);
     padding: 0.5rem;
     border-radius: 10px;
@@ -237,68 +243,36 @@ footer .icons-applis {
     gap: 2rem;
 }
 
+.icons-applis i{
+    padding: 0.25rem;
+}
+
 footer .copyright {
     font-size: 0.6rem;
 }
 
 
+
 /* --------------------------------- */
-/* --------------ACCEUIL------------ */
+/* -------------Animation----------- */
 /* --------------------------------- */
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 1.5rem;
-    gap: 1.5rem;
+header ul li:hover{
+    color: var(--darkblue);
 }
 
-main a {
-    width: calc(100% - 4rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+header i:hover{
+    color: var(--darkblue);
 }
 
-main .img {
+footer .icons-applis a i:hover{
     color: var(--light);
-    text-shadow: 3px 3px 2px var(--dark);
-    border-radius: 20px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 10px var(--dark);
-
-    width: 100%;
-    height: 9rem;
+    background-color: var(--darkblue);
 }
 
-main .img1 {
-    background: url(./assets/piscine5.jpg) 50% 50% no-repeat;
-    background-size: cover;
+footer nav ul li:hover{
+    text-decoration: underline;
 }
-
-main .img2 {
-    background: url(./assets/massage4.jpg) 50% 53% no-repeat;
-    background-size: cover;
-}
-
-main .img3 {
-    background: url(./assets/produit10.jpg) 50% 28% no-repeat;
-    background-size: cover;
-}
-
-
-
-
-
-
 
 
 
@@ -314,7 +288,9 @@ Tablette en paysage (1024px à 1112px) - Idem, mais aussi tablettes 12" en portr
 Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais généralement de 1200px et plus.
 */
 
-@media screen and (min-width: 1200px) {
+
+
+@media screen and (min-width: 800px) {
 
     /* ---------------header------------ */
     header {
@@ -337,6 +313,13 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
     .nav-flex .logo {
         display: block;
+        padding-right: 2rem;
+        flex-shrink: 1;
+    }
+
+    .side-right{
+        padding-left: 2rem;
+        flex-shrink: 1;
     }
 
     header .mobile-nav-toggle {
@@ -345,24 +328,38 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
     header .side-nav {
         display: block;
+        flex-grow: 1;
     }
 
     header .side-nav ul {
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: row;
-        gap: 3rem;
+        justify-content: space-evenly;
+        font-size: var();
+
         font-weight: var(--fw600);
     }
 
     header .side-nav ul li {
         width: auto;
         border: none;
+        font-size: 1rem;
     }
 
-    header .fa-user {
+    header .side-right{
+        display: flex;
+        gap: 1rem;
+    }
+    
+    header .side-right .fa-user,
+    header .side-right .fa-cart-shopping {
         background-color: transparent;
     }
 
+    .main-image p {
+        max-width: 35rem;
+    }
 
     /* ---------------footer------------ */
     section.bot-navbar {
@@ -412,5 +409,14 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
     h2 {
         font-size: 2rem;
+    }
+}
+
+
+@media screen and (min-width: 930px) {
+    header .side-nav ul li {
+        width: auto;
+        border: none;
+        font-size: 1.2rem;
     }
 }
