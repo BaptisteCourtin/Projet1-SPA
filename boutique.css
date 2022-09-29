@@ -4,11 +4,21 @@
     --blue: #657ed4;
     --red: #ff331f;
     --light: #fbfbfb;
+
+    --ffh1: 'MedievalSharp', serif;
+    --ffh2: 'Lora', serif;
+    --ffbasique: sans-serif;
+
+    --fsh1: 3rem;
+    --fsh2: 1.7rem;
+
+    --fw700: 700;
+    --fw600: 600;
 }
 
 body{
-    font-family: sans-serif;
-    color: ;
+    font-family: var(--ffbasique);
+    color: var(--darkblue);
 }
 
 .individuel .images {
@@ -71,6 +81,8 @@ p {
 }
 
 @media screen and (min-width: 800px) {
+
+
  
 .individuel {
     width: 100%;
@@ -85,14 +97,13 @@ p {
 .produit {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
+    gap: 30px;
     margin: 10px;
 }
 
 .buttons {
     width: 50%;
-    margin: 0px;
-    padding: 35px 0px;
+    margin: 15px;
 }
 
 p{
@@ -101,6 +112,27 @@ p{
 img {
     width: 100%;
     object-fit: cover;
+}
 
+.descriptif2 {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    order: 2;
+
+}
+
+hr {
+    width: 0px;
+}
+
+.descriptif1 .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
 }
 }
