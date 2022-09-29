@@ -223,7 +223,7 @@ section.bot-navbar {
 /* --------------------------------- */
 
 footer {
-    margin: 3rem 20%;
+    margin: 3rem 20% 0 20%;
     padding: 1.5rem;
     border-top: 2px solid var(--dark);
 
@@ -246,6 +246,7 @@ footer .icons-applis {
 
 .icons-applis i{
     padding: 0.25rem;
+    font-size: 2rem;
 }
 
 footer .copyright {
