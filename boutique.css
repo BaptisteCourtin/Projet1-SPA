@@ -19,7 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 10%;
-    box-shadow: 10px 5px 5px var(--dark);
+    box-shadow: 5px 9px 11px #A6A6A6;
 
 }
 
@@ -60,6 +60,7 @@ h3 {
 
 p {
     margin: 3px;
+    
 }
 
 .buttons {
