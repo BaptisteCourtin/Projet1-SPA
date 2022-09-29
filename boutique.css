@@ -1,0 +1,138 @@
+:root {
+    --dark: #0d0106;
+    --darkblue: #00002E;
+    --blue: #657ed4;
+    --red: #ff331f;
+    --light: #fbfbfb;
+
+    --ffh1: 'MedievalSharp', serif;
+    --ffh2: 'Lora', serif;
+    --ffbasique: sans-serif;
+
+    --fsh1: 3rem;
+    --fsh2: 1.7rem;
+
+    --fw700: 700;
+    --fw600: 600;
+}
+
+body{
+    font-family: var(--ffbasique);
+    color: var(--darkblue);
+}
+
+.individuel .images {
+    height: 25vh;
+    width: 70%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    box-shadow: 5px 9px 11px #A6A6A6;
+
+}
+
+img {
+    height: 100%;
+}
+
+h3 {
+    font-family:'lora', serif;
+    margin: 0;
+}
+
+.individuel {
+    width: 90%;
+    display: flex;
+    justify-content:start;
+    gap: 1rem;
+
+}
+
+.produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 15px 0px 7px;
+}
+
+.descriptif1 {
+    width: 100%;
+    padding: 15px 3px 5px 3px;
+}
+
+.descriptif2 {
+    width: 100%;
+    padding: 15px 3px 5px 3px;
+    text-align: end;
+}
+
+.individuel p {
+    margin: 3px;
+    
+}
+
+.buttons {
+    width: 50%;
+    margin: 5% auto;
+    padding: 25px 10px 15px 0px;
+}
+
+@media screen and (min-width: 800px) {
+
+
+ 
+.individuel {
+    width: 100%;
+}
+
+.individuel .images {
+    height: 40vh;
+    max-width: 280px;
+    gap: 0;
+
+}
+.produit {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-left: 3vw;
+}
+
+.buttons {
+    width: 50%;
+    margin: 15px;
+}
+
+.individuel p{
+    width: 80%;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.descriptif2 {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    order: 2;
+
+}
+
+hr {
+    width: 0px;
+}
+
+.descriptif1 .buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+}
