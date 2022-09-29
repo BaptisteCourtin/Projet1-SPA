@@ -186,7 +186,7 @@ body.opened .fa-xmark {
 
 h1 {
     font-family: var(--ffh1);
-    font-size: var(--fsh1);
+    font-size: clamp(2.5rem, 8vw, 5rem);
     font-weight: var(--fw700);
 }
 
@@ -415,10 +415,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
     main .img {
         height: 13rem;
         width: calc(100% - 10rem);
-    }
-
-    h1 {
-        font-size: 5rem;
     }
 
     h2 {
