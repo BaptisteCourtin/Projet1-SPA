@@ -178,7 +178,6 @@ body.opened .fa-xmark {
 
     color: var(--light);
     text-align: center;
-    text-shadow: 3px 3px 2px var(--dark);
 
     display: flex;
     flex-direction: column;
@@ -190,10 +189,12 @@ h1 {
     font-family: var(--ffh1);
     font-size: var(--fsh1);
     font-weight: var(--fw700);
+    text-shadow: 3px 3px 2px var(--dark);
 }
 
 .main-image p {
     max-width: 20rem;
+    text-shadow: 1.5px 1.5px 2px var(--dark);
 }
 
 
@@ -254,29 +255,6 @@ footer .copyright {
 
 
 /* --------------------------------- */
-/* -------------Animation----------- */
-/* --------------------------------- */
-
-header ul li:hover{
-    color: var(--darkblue);
-}
-
-header i:hover{
-    color: var(--darkblue);
-}
-
-footer .icons-applis a i:hover{
-    color: var(--light);
-    background-color: var(--darkblue);
-}
-
-footer nav ul li:hover{
-    text-decoration: underline;
-}
-
-
-
-/* --------------------------------- */
 /* ------------Responsive----------- */
 /* --------------------------------- */
 
@@ -294,7 +272,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
     /* ---------------header------------ */
     header {
-        background-color: rgb(101, 126, 212, 0.7);
+        background-color: transparent;
         padding: 0 2rem;
         color: var(--light);
 
@@ -345,7 +323,9 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         width: auto;
         border: none;
         font-size: 1rem;
-    }
+        font-family: var(--ffh2);
+        text-shadow: 3px 3px 2px var(--dark);
+    }  
 
     header .side-right{
         display: flex;
@@ -392,24 +372,29 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         border-top: none;
     }
 
-    /* --------------ACCEUIL------------ */
-    main {
-        margin-top: 3rem;
-        gap: 3rem;
+
+    /* --------------------------------- */
+    /* -------------Animation----------- */
+    /* --------------------------------- */
+
+
+    header i:hover{
+        color: var(--darkblue);
     }
 
-    main .img {
-        height: 13rem;
-        width: calc(100% - 10rem);
+    footer .icons-applis a i:hover{
+        color: var(--light);
+        background-color: var(--darkblue);
     }
 
-    h1 {
-        font-size: 5rem;
+    footer nav ul li:hover{
+        text-decoration: underline;
     }
 
-    h2 {
-        font-size: 2rem;
-    }
+    header ul li:hover{
+        color: var(--darkblue);
+        text-shadow: none;
+    }  
 }
 
 
