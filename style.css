@@ -38,6 +38,8 @@ li {
 }
 
 body {
+    /*height: 8000px;*/
+    color: var(--dark);
     color: var(--darkblue);
     background-color: var(--light);
     font-family: var(--ffbasique);
@@ -48,6 +50,8 @@ body {
 /* --------------------------------- */
 
 .logo {
+    font-family: 'MedievalSharp', sans-serif;
+    font-style: italic;
     font-weight: var(--fw700);
     font-size: var(--fsh2);
 }
@@ -187,7 +191,7 @@ body.opened .fa-xmark {
 
 h1 {
     font-family: var(--ffh1);
-    font-size: var(--fsh1);
+    font-size: clamp(2.5rem, 8vw, 5rem);
     font-weight: var(--fw700);
     text-shadow: 3px 3px 2px var(--dark);
 }
@@ -234,7 +238,11 @@ footer {
     gap: 1rem;
 }
 
-footer nav{
+footer .copyright {
+    font-size: 0.6rem;
+}
+
+footer nav {
     display: none;
 }
 
@@ -270,12 +278,13 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
 @media screen and (min-width: 800px) {
 
+
+
     /* ---------------header------------ */
     header {
         background-color: transparent;
         padding: 0 2rem;
         color: var(--light);
-
         position: absolute;
         top: 0;
         left: 0;
@@ -341,7 +350,8 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         max-width: 35rem;
     }
 
-    /* ---------------footer------------ */
+
+    /* ---footer--- */
     section.bot-navbar {
         display: none;
     }
@@ -366,7 +376,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         gap: 4rem;
     }
 
-    footer nav ul li{
+    footer nav ul li {
         width: 100%;
         text-align: center;
         border-top: none;
