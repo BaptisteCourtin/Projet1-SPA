@@ -1,6 +1,6 @@
 :root {
     --dark: #0d0106;
-    --darkblue: #3626a7;
+    --darkblue: #00002E;
     --blue: #657ed4;
     --red: #ff331f;
     --light: #fbfbfb;
@@ -45,6 +45,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding: 15px 0px 7px;
 }
 
 .descriptif1 {
@@ -67,8 +68,4 @@ p {
     width: 50%;
     margin: 5% auto;
     padding: 25px 10px 15px 0px;
-}
-
-section {
-    padding: 7px 0px 7px;
 }
