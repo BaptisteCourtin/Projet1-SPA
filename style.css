@@ -38,6 +38,8 @@ li {
 }
 
 body {
+    /*height: 8000px;*/
+    color: var(--dark);
     color: var(--darkblue);
     background-color: var(--light);
     font-family: var(--ffbasique);
@@ -48,6 +50,8 @@ body {
 /* --------------------------------- */
 
 .logo {
+    font-family: 'MedievalSharp', sans-serif;
+    font-style: italic;
     font-weight: var(--fw700);
     font-size: var(--fsh2);
 }
@@ -227,6 +231,10 @@ footer {
     gap: 1rem;
 }
 
+footer .copyright {
+    font-size: 0.6rem;
+}
+
 footer nav {
     display: none;
 }
@@ -316,12 +324,14 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
 @media screen and (min-width: 1200px) {
 
+
+
     /* ---------------header------------ */
     header {
-        background-color: rgb(101, 126, 212, 0.7);
+        background-color: var(--blue);
+        opacity: 0.7;
         padding: 0 2rem;
         color: var(--light);
-
         position: absolute;
         top: 0;
         left: 0;
@@ -364,7 +374,8 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
     }
 
 
-    /* ---------------footer------------ */
+
+    /* ---footer--- */
     section.bot-navbar {
         display: none;
     }
@@ -405,10 +416,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         height: 13rem;
         width: calc(100% - 10rem);
     }
-
-    /*h1 {
-        font-size: 5rem;
-    }*/
 
     h2 {
         font-size: 2rem;
