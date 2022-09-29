@@ -40,7 +40,7 @@ body {
 
 h3 {
     color: var(--dark);
-    font-family: 'lora', serif;
+    font-family: var(--ffh2);
 }
 
 main p {
