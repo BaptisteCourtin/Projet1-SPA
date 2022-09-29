@@ -69,3 +69,38 @@ p {
     margin: 5% auto;
     padding: 25px 10px 15px 0px;
 }
+
+@media screen and (min-width: 800px) {
+ 
+.individuel {
+    width: 100%;
+}
+
+.individuel .images {
+    height: 40vh;
+    max-width: 280px;
+    gap: 0;
+
+}
+.produit {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin: 10px;
+}
+
+.buttons {
+    width: 50%;
+    margin: 0px;
+    padding: 35px 0px;
+}
+
+p{
+    width: 80%;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+
+}
+}
