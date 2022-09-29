@@ -245,6 +245,7 @@ footer .icons-applis {
 
 footer .copyright {
     font-size: 0.6rem;
+    overflow: hidden;
 }
 
 
@@ -300,14 +301,13 @@ main .img3 {
     background-size: cover;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
 
     /* ---------------header------------ */
     header {
         background-color: rgb(101, 126, 212, 0.7);
         padding: 0 2rem;
         color: var(--light);
-
         position: absolute;
         top: 0;
         left: 0;
@@ -379,6 +379,7 @@ main .img3 {
         width: 100%;
         text-align: center;
         border-top: none;
+
     }
 
     /* --------------ACCEUIL------------ */
@@ -390,6 +391,7 @@ main .img3 {
     main .img {
         height: 13rem;
         width: calc(100% - 10rem);
+
     }
 
     h1 {
@@ -409,7 +411,6 @@ main .img3 {
 
 .soins img {
     border-radius: 1.5ch;
-    width: 100%;
     object-fit: cover;
 
 }
@@ -439,6 +440,7 @@ p {
     height: max-content;
     overflow: scroll;
     margin-bottom: 0;
+    overflow: hidden;
 }
 
 .panier {
@@ -533,4 +535,5 @@ p {
         display: flex;
 
     }
+
 }

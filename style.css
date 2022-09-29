@@ -227,7 +227,7 @@ footer {
     gap: 1rem;
 }
 
-footer nav{
+footer nav {
     display: none;
 }
 
@@ -314,7 +314,7 @@ Tablette en paysage (1024px à 1112px) - Idem, mais aussi tablettes 12" en portr
 Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais généralement de 1200px et plus.
 */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
 
     /* ---------------header------------ */
     header {
@@ -389,7 +389,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         gap: 4rem;
     }
 
-    footer nav ul li{
+    footer nav ul li {
         width: 100%;
         text-align: center;
         border-top: none;
