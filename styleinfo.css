@@ -5,7 +5,7 @@
 
 }
 
-p {
+.rating p {
     font-size: 2rem;
 }
 
@@ -56,6 +56,7 @@ input {
 textarea {
     height: 15vh;
     padding: 1rem;
+    font-family: sans-serif;
 }
 
 button {
