@@ -182,7 +182,7 @@ body.opened .fa-xmark {
 
 h1 {
     font-family: var(--ffh1);
-    font-size: var(--fsh1);
+    font-size: clamp(2.5rem, 8vw, 5rem);
     font-weight: var(--fw700);
 }
 
@@ -227,7 +227,7 @@ footer {
     gap: 1rem;
 }
 
-footer nav{
+footer nav {
     display: none;
 }
 
@@ -389,7 +389,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         gap: 4rem;
     }
 
-    footer nav ul li{
+    footer nav ul li {
         width: 100%;
         text-align: center;
         border-top: none;
@@ -406,9 +406,9 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         width: calc(100% - 10rem);
     }
 
-    h1 {
+    /*h1 {
         font-size: 5rem;
-    }
+    }*/
 
     h2 {
         font-size: 2rem;
