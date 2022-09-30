@@ -219,11 +219,11 @@ section.bot-navbar {
 }
 
 /* --------------------------------- */
-/* --------------footer------------- */
+/* --------------.footer------------- */
 /* --------------------------------- */
 
-footer {
-    margin: 3rem 20% 0 20%;
+.footer {
+    margin: 3rem 20% 2rem 20%;
     padding: 1.5rem;
     border-top: 2px solid var(--dark);
 
@@ -234,11 +234,12 @@ footer {
     gap: 1rem;
 }
 
-footer nav {
+
+.footer nav{
     display: none;
 }
 
-footer .icons-applis {
+.footer .icons-applis {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -249,7 +250,7 @@ footer .icons-applis {
     font-size: 2rem;
 }
 
-footer .copyright {
+.footer .copyright {
     font-size: 0.6rem;
 }
 
@@ -294,7 +295,11 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         flex-shrink: 1;
     }
 
-    .side-right {
+    .accueil{
+        display: none;
+    }
+
+    .side-right{
         padding-left: 2rem;
         flex-shrink: 1;
     }
@@ -323,8 +328,8 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         border: none;
         font-size: 1rem;
         font-family: var(--ffh2);
-        text-shadow: 3px 3px 2px var(--dark);
-    }
+        text-shadow: 0px 0px 8px var(--dark);
+    }  
 
     header .side-right {
         display: flex;
@@ -340,24 +345,25 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         max-width: 35rem;
     }
 
-    /* ---------------footer------------ */
+    /* ---------------.footer------------ */
     section.bot-navbar {
         display: none;
     }
 
-    footer {
+    .footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 3rem;
+        margin: 3rem 20% 0 20%;
     }
 
-    footer nav {
+    .footer nav {
         display: block;
     }
 
-    footer nav ul {
+    .footer nav ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -365,7 +371,8 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         gap: 4rem;
     }
 
-    footer nav ul li {
+
+    .footer nav ul li{
         width: 100%;
         text-align: center;
         border-top: none;
@@ -381,12 +388,13 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         color: var(--darkblue);
     }
 
-    footer .icons-applis a i:hover {
+    .footer .icons-applis a i:hover{
         color: var(--light);
         background-color: var(--darkblue);
     }
 
-    footer nav ul li:hover {
+
+    .footer nav ul li:hover{
         text-decoration: underline;
     }
 
