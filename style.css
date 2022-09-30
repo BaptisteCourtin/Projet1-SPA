@@ -134,7 +134,7 @@ body.opened::before {
     padding: 0em 0.5em;
 }
 
-header .side-right{
+header .side-right {
     display: flex;
     gap: 1rem;
 }
@@ -170,7 +170,7 @@ body.opened .fa-xmark {
 /* --------------------------------- */
 
 .main-image {
-    background: url(./assets/piscine4.jpg) 50% 50% no-repeat;
+    background: url(./assets/header2.jpg) 50% 50% no-repeat;
     background-size: cover;
     height: 300px;
     padding: 1rem;
@@ -244,7 +244,7 @@ footer .icons-applis {
     gap: 2rem;
 }
 
-.icons-applis i{
+.icons-applis i {
     padding: 0.25rem;
     font-size: 2rem;
 }
@@ -294,7 +294,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         flex-shrink: 1;
     }
 
-    .side-right{
+    .side-right {
         padding-left: 2rem;
         flex-shrink: 1;
     }
@@ -324,13 +324,13 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         font-size: 1rem;
         font-family: var(--ffh2);
         text-shadow: 3px 3px 2px var(--dark);
-    }  
+    }
 
-    header .side-right{
+    header .side-right {
         display: flex;
         gap: 1rem;
     }
-    
+
     header .side-right .fa-user,
     header .side-right .fa-cart-shopping {
         background-color: transparent;
@@ -377,23 +377,23 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
     /* --------------------------------- */
 
 
-    header i:hover{
+    header i:hover {
         color: var(--darkblue);
     }
 
-    footer .icons-applis a i:hover{
+    footer .icons-applis a i:hover {
         color: var(--light);
         background-color: var(--darkblue);
     }
 
-    footer nav ul li:hover{
+    footer nav ul li:hover {
         text-decoration: underline;
     }
 
-    header ul li:hover{
+    header ul li:hover {
         color: var(--darkblue);
         text-shadow: none;
-    }  
+    }
 }
 
 
