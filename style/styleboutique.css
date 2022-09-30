@@ -86,11 +86,12 @@ h3 {
  
 .individuel {
     width: 100%;
+    margin-bottom: 15px;
 }
 
 .individuel .images {
-    height: 40vh;
-    max-width: 280px;
+    height: 38vh;
+    width: 120%;
     gap: 0;
 
 }
@@ -98,17 +99,15 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+    margin: 45px 0px 0px 0px;
+    padding: 0px;
     margin-left: 3vw;
-}
-
-.buttons {
-    width: 50%;
-    margin: 15px;
 }
 
 .individuel p{
     width: 80%;
 }
+
 img {
     width: 100%;
     object-fit: cover;
@@ -119,7 +118,6 @@ img {
     flex-direction: column;
     text-align: start;
     order: 2;
-
 }
 
 hr {
@@ -132,7 +130,6 @@ hr {
 }
 
 .buttons {
-    display: flex;
-    align-items: center;
+    margin: 15px;
 }
 }
