@@ -187,7 +187,8 @@ body.opened .fa-xmark {
 
 h1 {
     font-family: var(--ffh1);
-    font-size: var(--fsh1);
+    /* font-size: var(--fsh1); */
+    font-size: clamp(2.35rem, 10vw, 4.5em);
     font-weight: var(--fw700);
     text-shadow: 3px 3px 2px var(--dark);
 }
@@ -222,8 +223,8 @@ section.bot-navbar {
 /* --------------footer------------- */
 /* --------------------------------- */
 
-footer {
-    margin: 3rem 20% 0 20%;
+.footer {
+    margin: 3rem 20% 2rem 20%;
     padding: 1.5rem;
     border-top: 2px solid var(--dark);
 
@@ -349,6 +350,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
     }
 
     .footer {
+        margin: 3rem 20% 0rem 20%;
         display: flex;
         flex-direction: column;
         justify-content: center;
