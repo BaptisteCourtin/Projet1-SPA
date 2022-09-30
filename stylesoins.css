@@ -1,7 +1,7 @@
 .soins .image {
     width: 40vw;
     overflow: hidden;
-    flex: 1;
+    flex: 2;
 }
 
 .soins img {
@@ -73,7 +73,7 @@ p {
 
     .massage2 {
 
-        max-height: 35vh;
+        height: 45vh;
         display: flex;
         flex-direction: row-reverse;
         padding: 10px;

@@ -1,6 +1,9 @@
 /* --------------------------------- */
 /* --------------ACCEUIL------------ */
 /* --------------------------------- */
+body {
+    max-width: 1000px;
+}
 
 main {
     display: flex;
@@ -55,11 +58,11 @@ main .img3 {
 /* -------------Animation----------- */
 /* --------------------------------- */
 
-main a .img:hover{
+main a .img:hover {
     transform: scale(1.05);
 }
 
-main a .img{
+main a .img {
     transition: 0.5s ease-in-out;
 }
 
@@ -83,9 +86,3 @@ main a .img{
         font-size: 2rem;
     }
 }
-
-
-
-
-
-

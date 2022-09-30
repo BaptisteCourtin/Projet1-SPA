@@ -24,6 +24,10 @@
     box-sizing: border-box;
 }
 
+body: {
+    max-width: 1000px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -269,6 +273,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
 
 @media screen and (min-width: 800px) {
+
     /* ---------------header------------ */
     header {
         background-color: transparent;
