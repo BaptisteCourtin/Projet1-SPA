@@ -57,6 +57,7 @@ textarea {
     height: 15vh;
     padding: 1rem;
     font-family: sans-serif;
+    resize: none;
 }
 
 button {

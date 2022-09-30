@@ -170,7 +170,7 @@ body.opened .fa-xmark {
 /* --------------------------------- */
 
 .main-image {
-    background: url(./assets/header2.jpg) 50% 50% no-repeat;
+    background: url(../assets/header2.jpg) 50% 50% no-repeat;
     background-size: cover;
     height: 300px;
     padding: 1rem;
@@ -269,12 +269,12 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
 
 @media screen and (min-width: 800px) {
+
     /* ---------------header------------ */
     header {
         background-color: transparent;
         padding: 0 2rem;
         color: var(--light);
-
         position: absolute;
         top: 0;
         left: 0;
@@ -292,6 +292,10 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         display: block;
         padding-right: 2rem;
         flex-shrink: 1;
+    }
+
+    .accueil {
+        display: none;
     }
 
     .side-right {
@@ -314,7 +318,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         flex-direction: row;
         justify-content: space-evenly;
         font-size: var();
-
         font-weight: var(--fw600);
     }
 
@@ -323,7 +326,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         border: none;
         font-size: 1rem;
         font-family: var(--ffh2);
-        text-shadow: 3px 3px 2px var(--dark);
+        text-shadow: 0px 0px 8px var(--dark);
     }
 
     header .side-right {
@@ -340,24 +343,25 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         max-width: 35rem;
     }
 
-    /* ---------------footer------------ */
+    /* ---------------.footer------------ */
     section.bot-navbar {
         display: none;
     }
 
-    footer {
+    .footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 3rem;
+        margin: 3rem 20% 0 20%;
     }
 
-    footer nav {
+    .footer nav {
         display: block;
     }
 
-    footer nav ul {
+    .footer nav ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -365,28 +369,25 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         gap: 4rem;
     }
 
-    footer nav ul li {
+    .footer nav ul li {
         width: 100%;
         text-align: center;
         border-top: none;
     }
 
-
     /* --------------------------------- */
     /* -------------Animation----------- */
     /* --------------------------------- */
-
-
     header i:hover {
         color: var(--darkblue);
     }
 
-    footer .icons-applis a i:hover {
+    .footer .icons-applis a i:hover {
         color: var(--light);
         background-color: var(--darkblue);
     }
 
-    footer nav ul li:hover {
+    .footer nav ul li:hover {
         text-decoration: underline;
     }
 
@@ -395,7 +396,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         text-shadow: none;
     }
 }
-
 
 @media screen and (min-width: 930px) {
     header .side-nav ul li {

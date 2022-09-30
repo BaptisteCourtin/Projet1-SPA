@@ -15,5 +15,5 @@ function validate(page) {
         }
     })()
 }
-validate('./index.html');
-validate('./info.html');
+validate('../pages/index.html');
+validate('./pages/info.html');
