@@ -88,25 +88,28 @@ h3 {
 .individuel {
     width: 100%;
     padding: 0px;
+    margin-bottom: 20px;
 }
 
 .individuel .images {
-    height: 40vh;
-    max-width: 280px;
+    height: 35vh;
+    width: 100%;
     gap: 0;
 
 }
+
 .produit {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     margin-left: 3vw;
-    padding: 45px 0px 0px 5px;
+    padding: 50px 0px 0px 0px;
 }
 
 .individuel p{
     width: 80%;
 }
+
 img {
     width: 100%;
     object-fit: cover;
@@ -119,20 +122,9 @@ img {
     order: 2;
 }
 
-hr {
-    width: 0px;
-}
-
-.descriptif1 .buttons {
-    display: flex;
-    justify-content: center;
-}
-
 .buttons {
-    display: flex;
-    align-items: center;
-    padding: 45px 10px 10px 10px;
-    width: 70%;
-    margin: 0px;
+    width: 100px;
+    height: 10px;
+
 }
 }
