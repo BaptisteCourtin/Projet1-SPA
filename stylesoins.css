@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
 :root {
     --dark: #0d0106;
     --darkblue: #00002e;
@@ -61,7 +67,7 @@ header {
     top: 1em;
     left: 1em;
     right: 1em;
-    z-index: 10;
+    z-index: 1000;
 }
 
 .nav-flex {
@@ -78,7 +84,7 @@ button.mobile-nav-toggle {
     cursor: pointer;
     border: none;
     padding: 0.2em;
-    z-index: 10;
+    z-index: 1000;
     font-size: 1.5rem;
 
     width: 2.5rem;
@@ -100,7 +106,7 @@ button.mobile-nav-toggle {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
-    z-index: 9;
+    z-index: 990;
 }
 
 body.opened::before {
@@ -108,6 +114,7 @@ body.opened::before {
     position: fixed;
     inset: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    z-index: -1;
 }
 
 .side-nav ul {
@@ -121,8 +128,7 @@ body.opened::before {
 .side-nav ul li {
     width: 100%;
     text-align: center;
-    border-top: 2px solid var(--darkblue);
-    font-size: 1.2rem;
+    border-top: 2px solid var(--dark);
 }
 
 .side-nav ul li:first-child {
@@ -134,13 +140,7 @@ body.opened::before {
     padding: 0em 0.5em;
 }
 
-header .side-right {
-    display: flex;
-    gap: 1rem;
-}
-
-header .side-right .fa-user,
-header .side-right .fa-cart-shopping {
+header .fa-user {
     background-color: var(--light);
     padding: 0.5rem;
     border-radius: 10px;
@@ -170,7 +170,7 @@ body.opened .fa-xmark {
 /* --------------------------------- */
 
 .main-image {
-    background: url(./assets/header2.jpg) 50% 50% no-repeat;
+    background: url(./assets/piscine4.jpg) 50% 50% no-repeat;
     background-size: cover;
     height: 300px;
     padding: 1rem;
@@ -178,6 +178,7 @@ body.opened .fa-xmark {
 
     color: var(--light);
     text-align: center;
+    text-shadow: 3px 3px 2px var(--dark);
 
     display: flex;
     flex-direction: column;
@@ -189,12 +190,10 @@ h1 {
     font-family: var(--ffh1);
     font-size: var(--fsh1);
     font-weight: var(--fw700);
-    text-shadow: 3px 3px 2px var(--dark);
 }
 
 .main-image p {
     max-width: 20rem;
-    text-shadow: 1.5px 1.5px 2px var(--dark);
 }
 
 
@@ -223,7 +222,7 @@ section.bot-navbar {
 /* --------------------------------- */
 
 footer {
-    margin: 3rem 20% 0 20%;
+    margin: 3rem 20%;
     padding: 1.5rem;
     border-top: 2px solid var(--dark);
 
@@ -244,37 +243,71 @@ footer .icons-applis {
     gap: 2rem;
 }
 
-.icons-applis i {
-    padding: 0.25rem;
-    font-size: 2rem;
-}
-
 footer .copyright {
     font-size: 0.6rem;
+    overflow: hidden;
 }
 
 
-
 /* --------------------------------- */
-/* ------------Responsive----------- */
+/* --------------ACCEUIL------------ */
 /* --------------------------------- */
 
-/* 
-Mobile en portrait (320px à 414px) - Pour les appareils avec des écrans de 4" à 6,9".
-Mobile en paysage (568px à 812px) - Idem, mais en paysage.
-Tablette en portrait (768px à 834px) - Pour les appareils de 7" à 10".
-Tablette en paysage (1024px à 1112px) - Idem, mais aussi tablettes 12" en portrait.
-Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais généralement de 1200px et plus.
-*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+}
 
-@media screen and (min-width: 800px) {
+main a {
+    width: calc(100% - 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .img {
+    color: var(--light);
+    text-shadow: 3px 3px 2px var(--dark);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px var(--dark);
+
+    width: 100%;
+    height: 9rem;
+}
+
+main .img1 {
+    background: url(./assets/piscine5.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+main .img2 {
+    background: url(./assets/massage4.jpg) 50% 53% no-repeat;
+    background-size: cover;
+}
+
+main .img3 {
+    background: url(./assets/produit10.jpg) 50% 28% no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 900px) {
+
     /* ---------------header------------ */
     header {
-        background-color: transparent;
+        background-color: rgb(101, 126, 212, 0.7);
         padding: 0 2rem;
         color: var(--light);
-
         position: absolute;
         top: 0;
         left: 0;
@@ -290,13 +323,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
     .nav-flex .logo {
         display: block;
-        padding-right: 2rem;
-        flex-shrink: 1;
-    }
-
-    .side-right {
-        padding-left: 2rem;
-        flex-shrink: 1;
     }
 
     header .mobile-nav-toggle {
@@ -305,40 +331,24 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
     header .side-nav {
         display: block;
-        flex-grow: 1;
     }
 
     header .side-nav ul {
         display: flex;
-        flex-wrap: nowrap;
         flex-direction: row;
-        justify-content: space-evenly;
-        font-size: var();
-
+        gap: 3rem;
         font-weight: var(--fw600);
     }
 
     header .side-nav ul li {
         width: auto;
         border: none;
-        font-size: 1rem;
-        font-family: var(--ffh2);
-        text-shadow: 3px 3px 2px var(--dark);
     }
 
-    header .side-right {
-        display: flex;
-        gap: 1rem;
-    }
-
-    header .side-right .fa-user,
-    header .side-right .fa-cart-shopping {
+    header .fa-user {
         background-color: transparent;
     }
 
-    .main-image p {
-        max-width: 35rem;
-    }
 
     /* ---------------footer------------ */
     section.bot-navbar {
@@ -369,38 +379,161 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         width: 100%;
         text-align: center;
         border-top: none;
+
     }
 
-
-    /* --------------------------------- */
-    /* -------------Animation----------- */
-    /* --------------------------------- */
-
-
-    header i:hover {
-        color: var(--darkblue);
+    /* --------------ACCEUIL------------ */
+    main {
+        margin-top: 3rem;
+        gap: 3rem;
     }
 
-    footer .icons-applis a i:hover {
-        color: var(--light);
-        background-color: var(--darkblue);
+    main .img {
+        height: 13rem;
+        width: calc(100% - 10rem);
+
     }
 
-    footer nav ul li:hover {
-        text-decoration: underline;
+    h1 {
+        font-size: 5rem;
     }
 
-    header ul li:hover {
-        color: var(--darkblue);
-        text-shadow: none;
+    h2 {
+        font-size: 2rem;
     }
 }
 
 
-@media screen and (min-width: 930px) {
-    header .side-nav ul li {
-        width: auto;
-        border: none;
-        font-size: 1.2rem;
+.soins .image {
+    max-width: 40vw;
+    overflow: hidden;
+}
+
+.soins img {
+    border-radius: 1.5ch;
+    object-fit: cover;
+
+}
+
+
+
+.border {
+    border-bottom: 0.5px solid #00002e;
+    border-top: 0.5px solid #00002e;
+    margin-left: 25vw;
+    margin-right: 25vw;
+
+}
+
+.massage1,
+.massage2,
+.massage3 {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+
+}
+
+p {
+    padding-left: 10px;
+    margin-bottom: 70px;
+    height: max-content;
+    overflow: scroll;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.panier {
+    width: max-content;
+    margin: 10px;
+
+}
+
+.textbuy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 900px) {
+
+    .soins .image {
+        max-width: 60vw;
+        border-radius: 1.5ch;
+        overflow: hidden;
+        box-shadow: 5px 9px 11px 0px #A6A6A6;
     }
+
+    .soins img {
+        width: 100%;
+        object-fit: cover;
+        object-position: 10% 20%;
+
+    }
+
+    .massage2 {
+
+        max-height: 35vh;
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 10px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding: 25px;
+
+    }
+
+    .border {
+        border-bottom: 0.5px solid #00002e;
+        border-top: 0.5px solid #00002e;
+        margin-left: 25vw;
+        margin-right: 25vw;
+
+    }
+
+    .main-image p {
+        margin-top: 1px;
+        overflow: hidden;
+    }
+
+    .massage1,
+    .massage3 {
+        display: flex;
+        flex-direction: row;
+        padding: 25px;
+        max-height: 35vh;
+    }
+
+    .massage3 {
+        margin-bottom: 50px;
+    }
+
+    .massage1 {
+        margin-top: 50px;
+    }
+
+    .soins p {
+        padding: 10px;
+        margin-top: 35px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .textbuy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .panier {
+        width: max-content;
+        margin: 10px;
+        display: flex;
+
+    }
+
 }
