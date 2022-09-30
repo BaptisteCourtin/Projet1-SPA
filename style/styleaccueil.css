@@ -79,7 +79,7 @@ main a .img {
         width: calc(100% - 10rem);
     }
 
-    h2 {
+    main h2 {
         font-size: 2rem;
     }
 }
