@@ -1,4 +1,4 @@
-fetch("./header.html")
+fetch("../pages/header.html")
     .then(response => {
         return response.text()
     })
@@ -23,7 +23,7 @@ fetch("./header.html")
         }
 
     });
-fetch("./footer.html")
+fetch("../pages/footer.html")
     .then(response => {
         return response.text()
     })

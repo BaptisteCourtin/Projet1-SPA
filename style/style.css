@@ -24,10 +24,6 @@
     box-sizing: border-box;
 }
 
-body: {
-    max-width: 1000px;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -174,7 +170,7 @@ body.opened .fa-xmark {
 /* --------------------------------- */
 
 .main-image {
-    background: url(./assets/header2.jpg) 50% 50% no-repeat;
+    background: url(../assets/header2.jpg) 50% 50% no-repeat;
     background-size: cover;
     height: 300px;
     padding: 1rem;
@@ -223,11 +219,11 @@ section.bot-navbar {
 }
 
 /* --------------------------------- */
-/* --------------.footer------------- */
+/* --------------footer------------- */
 /* --------------------------------- */
 
-.footer {
-    margin: 3rem 20% 2rem 20%;
+footer {
+    margin: 3rem 20% 0 20%;
     padding: 1.5rem;
     border-top: 2px solid var(--dark);
 
@@ -238,12 +234,11 @@ section.bot-navbar {
     gap: 1rem;
 }
 
-
-.footer nav{
+footer nav {
     display: none;
 }
 
-.footer .icons-applis {
+footer .icons-applis {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -254,7 +249,7 @@ section.bot-navbar {
     font-size: 2rem;
 }
 
-.footer .copyright {
+footer .copyright {
     font-size: 0.6rem;
 }
 
@@ -280,7 +275,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         background-color: transparent;
         padding: 0 2rem;
         color: var(--light);
-
         position: absolute;
         top: 0;
         left: 0;
@@ -300,11 +294,11 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         flex-shrink: 1;
     }
 
-    .accueil{
+    .accueil {
         display: none;
     }
 
-    .side-right{
+    .side-right {
         padding-left: 2rem;
         flex-shrink: 1;
     }
@@ -324,7 +318,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         flex-direction: row;
         justify-content: space-evenly;
         font-size: var();
-
         font-weight: var(--fw600);
     }
 
@@ -334,7 +327,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         font-size: 1rem;
         font-family: var(--ffh2);
         text-shadow: 0px 0px 8px var(--dark);
-    }  
+    }
 
     header .side-right {
         display: flex;
@@ -376,30 +369,25 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         gap: 4rem;
     }
 
-
-    .footer nav ul li{
+    .footer nav ul li {
         width: 100%;
         text-align: center;
         border-top: none;
     }
 
-
     /* --------------------------------- */
     /* -------------Animation----------- */
     /* --------------------------------- */
-
-
     header i:hover {
         color: var(--darkblue);
     }
 
-    .footer .icons-applis a i:hover{
+    .footer .icons-applis a i:hover {
         color: var(--light);
         background-color: var(--darkblue);
     }
 
-
-    .footer nav ul li:hover{
+    .footer nav ul li:hover {
         text-decoration: underline;
     }
 
@@ -408,7 +396,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         text-shadow: none;
     }
 }
-
 
 @media screen and (min-width: 930px) {
     header .side-nav ul li {
