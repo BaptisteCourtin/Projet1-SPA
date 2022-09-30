@@ -51,10 +51,19 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
     flex: 1;
 }
 
+.panier {
+
+    display: flex;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    max-width: 17vw;
+
+}
 
 @media screen and (min-width: 900px) {
 
@@ -132,10 +141,7 @@ p {
     }
 
     .panier {
-        width: max-content;
-        margin: 10px;
-        display: flex;
-
+        padding: 8px;
     }
 
 }
