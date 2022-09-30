@@ -15,9 +15,20 @@ img {
 
 }
 
+.jacuzzi img {
+    object-position: 0% 10%;
+}
+
+.balneo img,
+.exterieur img {
+    object-position: 50% 50%;
+}
+
 .detente div {
     display: flex;
     margin-bottom: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .textblock {
@@ -30,8 +41,9 @@ img {
 }
 
 main {
-    margin: 2em 1em;
+    margin: 2em auto;
     font-family: sans-serif;
+    max-width: 1000px;
 }
 
 body {

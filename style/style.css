@@ -134,7 +134,7 @@ body.opened::before {
     padding: 0em 0.5em;
 }
 
-header .side-right{
+header .side-right {
     display: flex;
     gap: 1rem;
 }
@@ -170,7 +170,7 @@ body.opened .fa-xmark {
 /* --------------------------------- */
 
 .main-image {
-    background: url(./assets/piscine4.jpg) 50% 50% no-repeat;
+    background: url(../assets/header2.jpg) 50% 50% no-repeat;
     background-size: cover;
     height: 300px;
     padding: 1rem;
@@ -187,7 +187,8 @@ body.opened .fa-xmark {
 
 h1 {
     font-family: var(--ffh1);
-    font-size: var(--fsh1);
+    /* font-size: var(--fsh1); */
+    font-size: clamp(2.35rem, 10vw, 4.5em);
     font-weight: var(--fw700);
     text-shadow: 3px 3px 2px var(--dark);
 }
@@ -222,8 +223,8 @@ section.bot-navbar {
 /* --------------footer------------- */
 /* --------------------------------- */
 
-footer {
-    margin: 3rem 20% 0 20%;
+.footer {
+    margin: 3rem 20% 2rem 20%;
     padding: 1.5rem;
     border-top: 2px solid var(--dark);
 
@@ -234,7 +235,7 @@ footer {
     gap: 1rem;
 }
 
-footer nav{
+footer nav {
     display: none;
 }
 
@@ -244,7 +245,7 @@ footer .icons-applis {
     gap: 2rem;
 }
 
-.icons-applis i{
+.icons-applis i {
     padding: 0.25rem;
     font-size: 2rem;
 }
@@ -268,7 +269,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 */
 
 
-
 @media screen and (min-width: 800px) {
 
     /* ---------------header------------ */
@@ -276,7 +276,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         background-color: transparent;
         padding: 0 2rem;
         color: var(--light);
-
         position: absolute;
         top: 0;
         left: 0;
@@ -296,7 +295,11 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         flex-shrink: 1;
     }
 
-    .side-right{
+    .accueil {
+        display: none;
+    }
+
+    .side-right {
         padding-left: 2rem;
         flex-shrink: 1;
     }
@@ -316,7 +319,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         flex-direction: row;
         justify-content: space-evenly;
         font-size: var();
-
         font-weight: var(--fw600);
     }
 
@@ -325,14 +327,14 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         border: none;
         font-size: 1rem;
         font-family: var(--ffh2);
-        text-shadow: 3px 3px 2px var(--dark);
-    }  
+        text-shadow: 0px 0px 8px var(--dark);
+    }
 
-    header .side-right{
+    header .side-right {
         display: flex;
         gap: 1rem;
     }
-    
+
     header .side-right .fa-user,
     header .side-right .fa-cart-shopping {
         background-color: transparent;
@@ -342,24 +344,26 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         max-width: 35rem;
     }
 
-    /* ---------------footer------------ */
+    /* ---------------.footer------------ */
     section.bot-navbar {
         display: none;
     }
 
-    footer {
+    .footer {
+        margin: 3rem 20% 0rem 20%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 3rem;
+        margin: 3rem 20% 0 20%;
     }
 
-    footer nav {
+    .footer nav {
         display: block;
     }
 
-    footer nav ul {
+    .footer nav ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -367,37 +371,33 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         gap: 4rem;
     }
 
-    footer nav ul li{
+    .footer nav ul li {
         width: 100%;
         text-align: center;
         border-top: none;
     }
 
-
     /* --------------------------------- */
     /* -------------Animation----------- */
     /* --------------------------------- */
-
-
-    header i:hover{
+    header i:hover {
         color: var(--darkblue);
     }
 
-    footer .icons-applis a i:hover{
+    .footer .icons-applis a i:hover {
         color: var(--light);
         background-color: var(--darkblue);
     }
 
-    footer nav ul li:hover{
+    .footer nav ul li:hover {
         text-decoration: underline;
     }
 
-    header ul li:hover{
+    header ul li:hover {
         color: var(--darkblue);
         text-shadow: none;
-    }  
+    }
 }
-
 
 @media screen and (min-width: 930px) {
     header .side-nav ul li {

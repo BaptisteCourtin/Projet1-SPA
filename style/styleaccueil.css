@@ -36,17 +36,17 @@ main .img {
 }
 
 main .img1 {
-    background: url(./assets/piscine5.jpg) 50% 50% no-repeat;
+    background: url(../assets/piscine5.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 
 main .img2 {
-    background: url(./assets/massage4.jpg) 50% 53% no-repeat;
+    background: url(../assets/massage4.jpg) 50% 53% no-repeat;
     background-size: cover;
 }
 
 main .img3 {
-    background: url(./assets/produit10.jpg) 50% 28% no-repeat;
+    background: url(../assets/produit10.jpg) 50% 28% no-repeat;
     background-size: cover;
 }
 
@@ -55,11 +55,11 @@ main .img3 {
 /* -------------Animation----------- */
 /* --------------------------------- */
 
-main a .img:hover{
+main a .img:hover {
     transform: scale(1.05);
 }
 
-main a .img{
+main a .img {
     transition: 0.5s ease-in-out;
 }
 
@@ -79,13 +79,7 @@ main a .img{
         width: calc(100% - 10rem);
     }
 
-    h2 {
+    main h2 {
         font-size: 2rem;
     }
 }
-
-
-
-
-
-
