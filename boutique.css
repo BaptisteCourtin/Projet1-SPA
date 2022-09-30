@@ -34,9 +34,7 @@ body{
 }
 
 img {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 h3 {
@@ -47,7 +45,7 @@ h3 {
 .individuel {
     width: 90%;
     display: flex;
-    padding: 10px;
+    justify-content:start;
     gap: 1rem;
 
 }
@@ -78,7 +76,8 @@ h3 {
 
 .buttons {
     width: 50%;
-    margin: 10% auto;
+    margin: 5% auto;
+    padding: 25px 10px 15px 0px;
 }
 
 @media screen and (min-width: 800px) {
@@ -87,29 +86,29 @@ h3 {
  
 .individuel {
     width: 100%;
-    padding: 0px;
-    margin-bottom: 20px;
 }
 
 .individuel .images {
-    height: 35vh;
-    width: 100%;
+    height: 40vh;
+    max-width: 280px;
     gap: 0;
 
 }
-
 .produit {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
     margin-left: 3vw;
-    padding: 50px 0px 0px 0px;
+}
+
+.buttons {
+    width: 50%;
+    margin: 15px;
 }
 
 .individuel p{
     width: 80%;
 }
-
 img {
     width: 100%;
     object-fit: cover;
@@ -120,11 +119,20 @@ img {
     flex-direction: column;
     text-align: start;
     order: 2;
+
+}
+
+hr {
+    width: 0px;
+}
+
+.descriptif1 .buttons {
+    display: flex;
+    justify-content: center;
 }
 
 .buttons {
-    width: 100px;
-    height: 10px;
-
+    display: flex;
+    align-items: center;
 }
 }
