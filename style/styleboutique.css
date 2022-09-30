@@ -102,11 +102,12 @@ h3 {
     margin: 45px 0px 0px 0px;
     padding: 0px;
     margin-left: 3vw;
-}git a
+}
 
 .individuel p{
     width: 80%;
 }
+
 img {
     width: 100%;
     object-fit: cover;
@@ -117,7 +118,6 @@ img {
     flex-direction: column;
     text-align: start;
     order: 2;
-
 }
 
 hr {
@@ -130,9 +130,6 @@ hr {
 }
 
 .buttons {
-    display: flex;
-    align-items: center;
-    width: 50%;
     margin: 15px;
 }
 }
