@@ -223,7 +223,7 @@ section.bot-navbar {
 /* --------------------------------- */
 
 footer {
-    margin: 3rem 20% 0 20%;
+    margin: 3rem 20% 2rem 20%;
     padding: 1.5rem;
     border-top: 2px solid var(--dark);
 
@@ -296,6 +296,10 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         flex-shrink: 1;
     }
 
+    .accueil{
+        display: none;
+    }
+
     .side-right{
         padding-left: 2rem;
         flex-shrink: 1;
@@ -325,7 +329,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         border: none;
         font-size: 1rem;
         font-family: var(--ffh2);
-        text-shadow: 3px 3px 2px var(--dark);
+        text-shadow: 0px 0px 8px var(--dark);
     }  
 
     header .side-right{
@@ -353,6 +357,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         justify-content: center;
         align-items: center;
         gap: 3rem;
+        margin: 3rem 20% 0 20%;
     }
 
     footer nav {
