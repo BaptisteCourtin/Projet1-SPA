@@ -8,12 +8,14 @@ main {
     justify-content: center;
     align-items: center;
 
-    margin-top: 1.5rem;
+    padding-top: 1.5rem;
     gap: 1.5rem;
+
+    position: relative;
 }
 
 main a {
-    width: calc(100% - 4rem);
+    width: calc(100% - 10rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,13 +24,15 @@ main a {
 
 main .img {
     color: var(--light);
-    text-shadow: 3px 3px 2px var(--dark);
+    text-shadow: 0px 0px 4px var(--dark);
+    font-size: 1.2rem;
     border-radius: 20px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     box-shadow: 5px 5px 10px var(--dark);
 
     width: 100%;
@@ -64,22 +68,23 @@ main a .img {
 }
 
 
-
+/* --------------------------------- */
+/* -------------RESPONSIVE---------- */
+/* --------------------------------- */
 
 @media screen and (min-width: 800px) {
 
     /* --------------ACCEUIL------------ */
     main {
-        margin-top: 3rem;
+        padding-top: 3rem;
         gap: 3rem;
     }
 
     main .img {
         height: 13rem;
-        width: calc(100% - 10rem);
     }
 
     main h2 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
