@@ -22,6 +22,12 @@ fetch("../pages/header.html")
             })
         }
 
+        const user = document.querySelector(".fa-user");
+        user.addEventListener('click', () => {
+            user.classList.toggle('jump');
+        })
+
+
     });
 fetch("../pages/footer.html")
     .then(response => {
