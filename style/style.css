@@ -109,6 +109,7 @@ body.opened::before {
     position: fixed;
     inset: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    z-index: 1;
 }
 
 .side-nav ul {
@@ -228,6 +229,8 @@ section.bot-navbar {
     background-color: var(--light);
     padding: 0.5rem;
     border-radius: 10px;
+
+    z-index: 2;
 }
 
 /* --------------------------------- */
@@ -399,10 +402,10 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
     /* -------------Animation----------- */
     /* --------------------------------- */
 
-    
+
     header .side-right .fa-user:hover,
     header .side-right .fa-cart-shopping:hover,
-    header .fa-spa:hover {        
+    header .fa-spa:hover {
         border: 2px solid var(--light);
     }
 
@@ -422,7 +425,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         position: relative;
         padding: 0.25rem;
         border: none;
-      }
+    }
 
     header .side-nav ul a::before {
         content: '';
@@ -459,43 +462,126 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         height: 100%;
     }
 
+
     /* --------------------------------- */
-    /* --------------USER--------------- */
+    /* -------------USER PLOUF---------- */
     /* --------------------------------- */
 
-
-    header .side-right .fa-user.jump {        
+    header .side-right .fa-user.jump {
         animation: jump 3s linear;
     }
 
+    .side-right {
+        position: relative;
+    }
+
+    header .side-right .droplet1 {
+        opacity: 0;
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        color: var(--red);
+        transform: rotate(210deg);
+    }
+
+    header .side-right .droplet2 {
+        opacity: 0;
+        position: absolute;
+        top: 100px;
+        right: 110px;
+        color: var(--red);
+        transform: rotate(210deg);
+    }
+
+    header .side-right .droplet1.drop1 {
+        animation: drop1 3s linear;
+    }
+
+    header .side-right .droplet2.drop2 {
+        animation: drop2 3s linear;
+    }
+
+
     @keyframes jump {
-        0%{
+        0% {
             transform: rotate(-50deg);
         }
 
-        20%{
+        20% {
             transform: translate(-60px, 50px) rotate(-120deg);
         }
 
-        40%{
+        40% {
             transform: translate(-100px, 100px) rotate(-180deg);
             opacity: 1;
         }
 
-        41%{
+        41% {
             transform: translate(-100px, 100px) rotate(-180deg);
             opacity: 0;
         }
 
-        100%{
+        100% {
             transform: translate(-100px, 100px) rotate(-180deg);
             opacity: 0;
         }
-
     }
 
+    @keyframes drop1 {
+        0% {
+            opacity: 0;
+        }
 
+        40% {
+            opacity: 0;
+        }
 
+        40.5% {
+            opacity: 1;
+            transform: translate(0, 0) rotate(210deg);
+        }
+
+        75% {
+            transform: translate(10px, -10px) rotate(350deg);
+        }
+
+        95% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(20px, 0px) rotate(360deg);
+        }
+    }
+
+    @keyframes drop2 {
+        0% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        40.5% {
+            opacity: 1;
+            transform: translate(0, 0) rotate(140deg);
+        }
+
+        75% {
+            transform: translate(-10px, -10px) rotate(10deg);
+        }
+
+        95% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(-20px, 0px) rotate(0deg);
+        }
+    }
 }
 
 

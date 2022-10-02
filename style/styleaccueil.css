@@ -15,7 +15,7 @@ main {
 }
 
 main a {
-    width: calc(100% - 10rem);
+    width: calc(100% - 4rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,6 +78,10 @@ main a .img {
     main {
         padding-top: 3rem;
         gap: 3rem;
+    }
+
+    main a{
+        width: calc(100% - 10rem);
     }
 
     main .img {
