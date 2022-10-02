@@ -141,6 +141,10 @@ header .side-right {
     gap: 1rem;
 }
 
+header .side-right .fa-droplet{
+    display: none;
+}
+
 header .fa-spa,
 header .side-right .fa-user,
 header .side-right .fa-cart-shopping {
@@ -475,6 +479,10 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         position: relative;
     }
 
+    header .side-right .fa-droplet{
+        display: block;
+    }
+
     header .side-right .droplet1 {
         opacity: 0;
         position: absolute;
@@ -490,7 +498,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         top: 100px;
         right: 110px;
         color: var(--red);
-        transform: rotate(210deg);
+        transform: rotate(140deg);
     }
 
     header .side-right .droplet1.drop1 {

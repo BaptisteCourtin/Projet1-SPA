@@ -31,17 +31,18 @@ fetch("../pages/header.html")
         const audio = document.querySelector("#audio")
 
         user.addEventListener('click', () => {
-            user.classList.toggle('jump');
-            droplet1.classList.toggle('drop1');
-            droplet2.classList.toggle('drop2');
-            if(user.classList.contains("jump")){
-                setTimeout(soundplouf , 850);
+            if (window.innerWidth >= 800){
+                user.classList.toggle('jump');
+                droplet1.classList.toggle('drop1');
+                droplet2.classList.toggle('drop2');
+                if(user.classList.contains("jump")){
+                    setTimeout(soundplouf , 850);
+                }
             }
         })
 
         const soundplouf = () => {
             audio.play();
-
         }
 
         // ---
