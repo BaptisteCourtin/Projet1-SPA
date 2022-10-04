@@ -488,7 +488,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         position: absolute;
         top: 100px;
         right: 100px;
-        color: var(--red);
+        color: var(--light);
         transform: rotate(210deg);
     }
 
@@ -497,7 +497,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         position: absolute;
         top: 100px;
         right: 110px;
-        color: var(--red);
+        color: var(--light);
         transform: rotate(140deg);
     }
 
