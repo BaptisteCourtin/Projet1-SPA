@@ -59,6 +59,10 @@ iframe {
     color: lightgray;
 }
 
+.gold {
+    color: #ffdc0f;
+}
+
 .contact form {
     display: flex;
     flex-direction: column;
@@ -147,7 +151,8 @@ dialog {
 }
 
 dialog p {
-    width: 50%;
+    width: 65%;
+    margin: 1rem 0;
     text-align: center;
 }
 
@@ -165,7 +170,8 @@ dialog form {
     padding: 1rem;
 }
 
-button {
+#close,
+#submit {
     border-radius: 2.5ch;
     border: var(--brdForm);
     color: var(--dark);
