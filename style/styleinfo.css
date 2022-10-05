@@ -49,7 +49,7 @@ iframe {
     color: lightgray;
 }
 
-form {
+.contact form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,6 +107,8 @@ input {
     background-color: var(--light);
     border-radius: 5px;
     outline: none;
+    font-family: sans-serif;
+    padding: 1em;
 }
 
 textarea:valid~span,
@@ -129,4 +131,35 @@ textarea:focus,
 input:valid,
 input:focus {
     border: 2px solid grey;
+}
+
+dialog p {
+    width: 50%;
+    text-align: center;
+}
+
+dialog {
+    width: clamp(300px, 70vh, 800px);
+    margin: 5vh auto;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+}
+
+dialog h3 {
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px solid var(--dark);
 }

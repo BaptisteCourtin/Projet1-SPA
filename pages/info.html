@@ -77,15 +77,25 @@
                 </div>
                 <div class="inputbox"><input type="email" required="required"><span>Adresse E-mail</span></div>
                 <div class="inputbox"><textarea required="required"></textarea><span>Votre message</span></div>
-                <button type="submit" valid="Send Message">Envoyer</button>
+                <button id="submit" type="submit" valid="Send Message">Envoyer</button>
             </form>
         </div>
+        <dialog id="msgSent">
+            <form>
+                <h3>Message envoyé <i class="fa-regular fa-circle-check"></i></h3>
+                <p class="msg">
+                    Merci pour votre message, il sera traité dans les plus brefs délais!
+                </p>
+
+                <button id="close">Fermer</button>
+            </form>
+        </dialog>
     </main>
 
 
     <footer>
     </footer>
-
+    <script src="../script/infoscript.js"></script>
 </body>
 
 </html>
