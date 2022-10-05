@@ -44,22 +44,27 @@
         </div>
         <div class="rating">
             <h3>Votre avis</h3>
-            <p><span class="fa fa-star "></span>
+            <p><span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
-                <span class="fa fa-star "></span>
-                <span class="fa fa-star "></span>
-                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
             </p>
         </div>
         <div class="contact">
             <h3>Contactez-nous</h3>
             <form>
                 <div class="name">
-                    <input type="text" placeholder="Nom" class="name-surname">
-                    <input type="text" placeholder="Prénom" class="name-surname">
+                    <div class="inputbox">
+                        <input type="text" required="required" class="name-surname">
+                        <span>Nom</span>
+                    </div>
+                    <div class="inputbox"><input type="text" required="required" class="name-surname">
+                        <span>Prénom</span>
+                    </div>
                 </div>
-                <input type="email" placeholder="Adresse e-mail">
-                <textarea placeholder="Votre message"></textarea>
+                <div class="inputbox"><input type="email" required="required"><span>Adresse E-mail</span></div>
+                <div class="inputbox"><textarea required="required"></textarea><span>Votre message</span></div>
                 <button type="submit" valid="Send Message">Envoyer</button>
             </form>
         </div>
