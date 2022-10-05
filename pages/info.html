@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2? family=Lora:wght@600;700&display=swap" rel="stylesheet">
-    
+
     <!-- icons -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/519d5d9d02.js" crossorigin="anonymous"></script>
@@ -29,18 +29,30 @@
     </header>
     <section class="main-image">
         <h1>Infos Pratiques</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolore sapiente officia reprehenderit aut
-            blanditiis.</p>
+        <p>Vous trouverez ici toutes les informations nécessaires pour que votre expérience soit la plus agréable
+            possible. N'hésitez pas à nous donner votre avis ou nous contacter pour toute question ou remarque.</p>
     </section>
     <!-- fin header -->
 
-    <main>
+    <main id="main-content">
         <div class="map">
             <h3>Nous trouver</h3>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2710.0611124276456!2d-1.6283070850116192!3d47.215386522914756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ecbc5a702b29%3A0x1b5d7f3f4458fa44!2sChem.%20du%20Vigneau%2C%2044800%20Saint-Herblain!5e0!3m2!1sfr!2sfr!4v1664369531848!5m2!1sfr!2sfr"
                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="openHours">
+            <h3>Nos horaires</h3>
+            <ul>
+                <li>Lundi : fermé </li>
+                <li>Mardi : 10h - 18h</li>
+                <li>Mercredi : 14h - 20h</li>
+                <li>Jeudi : 10h - 18h</li>
+                <li>Vendredi : 10h - 20h</li>
+                <li>Samedi : 10h - 22h</li>
+                <li>Dimanche : fermé </li>
+            </ul>
         </div>
         <div class="rating">
             <h3>Votre avis</h3>
@@ -65,15 +77,27 @@
                 </div>
                 <div class="inputbox"><input type="email" required="required"><span>Adresse E-mail</span></div>
                 <div class="inputbox"><textarea required="required"></textarea><span>Votre message</span></div>
-                <button type="submit" valid="Send Message">Envoyer</button>
+                <button id="submit" type="submit" valid="Send Message">Envoyer</button>
             </form>
         </div>
+        <dialog id="msgSent">
+            <form>
+                <h3>Message envoyé <i class="fa-regular fa-circle-check"></i></h3>
+                <p class="msg">
+                    Merci pour votre message, il sera traité dans les plus brefs délais!
+                </p>
+
+                <button id="close">Fermer</button>
+            </form>
+        </dialog>
     </main>
 
 
     <footer>
     </footer>
-    
+
+    <script src="../script/infoscript.js"></script>
+
 </body>
 
 </html>
