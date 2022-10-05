@@ -33,6 +33,7 @@ fetch("../pages/header.html")
             });
         }
     });
+
 fetch("../pages/footer.html")
     .then((response) => {
         return response.text();

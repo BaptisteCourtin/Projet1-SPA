@@ -244,6 +244,7 @@ section.bot-navbar {
     background-color: var(--light);
     padding: 0.5rem;
     border-radius: 10px;
+    border-top: 1px solid var(--dark);
 }
 
 /* --------------------------------- */
@@ -312,6 +313,22 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         transform: translateY(0);
     }
 
+    /* -------------boutique------------- */
+    .sideCart.opened {
+        display: block;
+        text-align: center;
+        position: absolute;
+        padding: 1.5rem;
+        inset: 4rem 2rem auto auto;
+        width: 250px;
+
+        background-color: white;
+        color: var(--dark);
+        border-radius: 10px;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+        z-index: 9;
+    }
+
     /* ---------------header------------ */
     header {
         background-color: transparent;
@@ -332,7 +349,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
     .nav-flex .logo {
         display: block;
-        padding-right: 2rem;
+        margin-right: 2rem;
         flex-shrink: 1;
     }
 
