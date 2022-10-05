@@ -80,7 +80,7 @@ h3 {
 
 .individuel button {
     border-radius: 2.5ch;
-    border: 2px solid var(--dark);
+    border: 2px solid grey;
     color: var(--dark);
     box-shadow: 0 0 8px var(--dark);
     margin: 13px 0;
