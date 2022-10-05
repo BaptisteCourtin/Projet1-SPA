@@ -1,8 +1,14 @@
+:root {
+    --brdR: 5px;
+    --brdForm: 2px solid grey;
+    --formW: clamp(200px, 70vw, 700px);
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    margin: 2rem auto;
 
 }
 
@@ -14,7 +20,7 @@ main {
 
 h3 {
     color: var(--dark);
-    font-family: 'lora', serif;
+    font-family: var(--ffh2);
     padding: 1rem;
     text-align: center;
 }
@@ -27,6 +33,10 @@ iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.openHours ul li {
+    margin: 1vh 0;
 }
 
 .fa-star {
@@ -55,13 +65,11 @@ iframe {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    width: clamp(200px, 70vw, 700px);
+    width: var(--formW);
 }
 
 input {
-    height: 6vh;
-    width: 100%;
-    padding: 1rem;
+    height: 7vh;
 }
 
 .inputbox {
@@ -74,15 +82,13 @@ input {
     justify-content: space-between;
     align-items: center;
     gap: 1em;
-    width: clamp(200px, 70vw, 700px);
+    width: var(--formW);
 }
 
 textarea {
     height: 15vh;
-    padding: 1vh;
-    font-family: sans-serif;
     resize: none;
-    width: 100%;
+
 }
 
 button {
@@ -98,6 +104,7 @@ form span {
     pointer-events: none;
     color: grey;
     transition: 0.5s;
+    padding: 0;
 
 }
 
@@ -105,10 +112,11 @@ textarea,
 input {
     border: 1px solid grey;
     background-color: var(--light);
-    border-radius: 5px;
+    border-radius: var(--brdR);
     outline: none;
-    font-family: sans-serif;
-    padding: 1em;
+    font-family: var(--ffbasique);
+    padding: 2vh 1.5vh;
+    width: 100%;
 }
 
 textarea:valid~span,
@@ -121,28 +129,31 @@ input:focus~span {
     transform: translateY(-3vh);
     background-color: var(--light);
     padding: 0 2vh;
-    border-left: 2px solid grey;
-    border-right: 2px solid grey;
-    border-radius: 5px;
+    border-left: var(--brdForm);
+    border-right: var(--brdForm);
+    border-radius: var(--brdR);
 }
 
 textarea:valid,
 textarea:focus,
 input:valid,
 input:focus {
-    border: 2px solid grey;
-}
-
-dialog p {
-    width: 50%;
-    text-align: center;
+    border: var(--brdForm);
 }
 
 dialog {
     width: clamp(300px, 70vh, 800px);
     margin: 5vh auto;
-    border-radius: 5px;
+    border-radius: var(--brdR);
     border: 1px solid var(--dark);
+    background-image: url(../assets/pattern_waves-4_0.5_2_0-0_0_1__ffffff_8059d417.png);
+    background-color: var(--light);
+    background-position: 20% 0;
+}
+
+dialog p {
+    width: 50%;
+    text-align: center;
 }
 
 dialog h3 {
@@ -160,6 +171,6 @@ dialog form {
 }
 
 button {
-    border-radius: 5px;
+    border-radius: var(--brdR);
     border: 1px solid var(--dark);
 }

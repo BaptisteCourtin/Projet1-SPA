@@ -92,7 +92,7 @@ main p {
     text-align: right;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
     .textblock {
         justify-content: center;
         flex-shrink: 1;
