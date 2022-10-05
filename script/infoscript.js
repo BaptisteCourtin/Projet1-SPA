@@ -1,9 +1,11 @@
 const msgSent = document.getElementById("msgSent");
-const msg = document.getElementById("msg");
-const submit = document.getElementById("submit");
-const sentBtn = document.getElementById("sentBtn");
-// "Update details" button opens the <dialog> modally
-submit.addEventListener('click', function (event) {
-    event.preventDefault();
+const pmsg = document.getElementById("pmsg");
+
+
+const onSubmit = (e) => {
+    e.preventDefault();
+    const firstname = document.getElementById("firstname").value;
+    pmsg.innerHTML = `Merci pour votre message ${firstname}, il sera traité dans les plus brefs délais!`;
     msgSent.showModal();
-});
+}
+
