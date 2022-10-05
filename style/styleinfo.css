@@ -91,11 +91,6 @@ textarea {
 
 }
 
-button {
-    width: 100px;
-    height: 40px;
-    align-self: center;
-}
 
 form span {
     position: absolute;
@@ -171,6 +166,15 @@ dialog form {
 }
 
 button {
-    border-radius: var(--brdR);
-    border: 1px solid var(--dark);
+    border-radius: 2.5ch;
+    border: var(--brdForm);
+    color: var(--dark);
+    box-shadow: 0 0 8px var(--dark);
+    opacity: 80%;
+    font-weight: 900;
+    background-color: var(--light);
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    cursor: pointer;
 }
