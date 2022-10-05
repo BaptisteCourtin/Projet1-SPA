@@ -49,7 +49,7 @@ p {
     flex: 1;
 }
 
-.panier {
+.panier1, .panier2, .panier3 {
 
     display: flex;
     padding: 4px;
@@ -65,10 +65,12 @@ p {
     margin: 10px;
 
 }
-.buy {
+
+.buy , .buy2 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 
 @media screen and (min-width: 900px) {
@@ -139,12 +141,12 @@ p {
         align-items: center;
     }
 
-    .panier {
+    .panier1,.panier2,.panier3 {
         padding: 8px 15px;
 
     }
 
-.panier ul {
+.panier1 ul, .panier2 ul, .panier3 ul {
     display: flex;
     flex-direction: column;
     text-decoration: underline;
