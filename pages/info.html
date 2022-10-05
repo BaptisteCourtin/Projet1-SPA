@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2? family=Lora:wght@600;700&display=swap" rel="stylesheet">
+    
     <!-- icons -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/519d5d9d02.js" crossorigin="anonymous"></script>
@@ -22,15 +23,16 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <script src="../script/headerscript.js"></script>
     </header>
-
     <section class="main-image">
         <h1>Infos Pratiques</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolore sapiente officia reprehenderit aut
             blanditiis.</p>
     </section>
+    <!-- fin header -->
 
     <main>
         <div class="map">
@@ -42,40 +44,36 @@
         </div>
         <div class="rating">
             <h3>Votre avis</h3>
-            <p><span class="fa fa-star "></span>
+            <p><span class="fa fa-star"></span>
                 <span class="fa fa-star"></span>
-                <span class="fa fa-star "></span>
-                <span class="fa fa-star "></span>
-                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
             </p>
         </div>
         <div class="contact">
             <h3>Contactez-nous</h3>
             <form>
                 <div class="name">
-                    <input type="text" placeholder="Nom" class="name-surname">
-                    <input type="text" placeholder="Prénom" class="name-surname">
+                    <div class="inputbox">
+                        <input type="text" required="required" class="name-surname">
+                        <span>Nom</span>
+                    </div>
+                    <div class="inputbox"><input type="text" required="required" class="name-surname">
+                        <span>Prénom</span>
+                    </div>
                 </div>
-                <input type="email" placeholder="Adresse e-mail">
-                <textarea placeholder="Votre message"></textarea>
+                <div class="inputbox"><input type="email" required="required"><span>Adresse E-mail</span></div>
+                <div class="inputbox"><textarea required="required"></textarea><span>Votre message</span></div>
                 <button type="submit" valid="Send Message">Envoyer</button>
             </form>
         </div>
     </main>
-    <section class="bot-navbar">
-        <a href="index.html" class="logo"><i class="fa-solid fa-spa"></i></a>
-        <a href="./boutique.html">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </a>
-    </section>
+
 
     <footer>
-
     </footer>
+    
 </body>
 
 </html>
-
-<head>
-
-</head>

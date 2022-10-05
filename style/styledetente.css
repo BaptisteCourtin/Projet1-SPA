@@ -1,10 +1,32 @@
+.card {
+    box-shadow: -5px 9px 11px 0px #A6A6A6;
+    border-radius: 20px;
+    padding: 3vh;
+    margin: 4rem 0;
+}
+
+.detente i {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+
 .imgdetente {
     min-height: 120px;
     width: 45vw;
     border-radius: 20px;
-    box-shadow: -5px 9px 11px 0px #A6A6A6;
     overflow: hidden;
     flex: 2;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: -5px 9px 20px 0px #A6A6A6;
+}
+
+.card {
+    transition: 0.5s ease-in-out;
 }
 
 img {
@@ -26,7 +48,6 @@ img {
 
 .detente div {
     display: flex;
-    margin-bottom: 24px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -50,9 +71,10 @@ body {
     background-color: var(--light);
 }
 
-h3 {
+.card h3 {
     color: var(--dark);
     font-family: var(--ffh2);
+    font-size: 1.4rem;
 }
 
 main p {
@@ -62,7 +84,7 @@ main p {
 .exterieur .imgdetente,
 .jacuzzi .imgdetente {
     order: 1;
-    box-shadow: 5px 9px 11px 0px #A6A6A6;
+
 }
 
 .exterieur div,
