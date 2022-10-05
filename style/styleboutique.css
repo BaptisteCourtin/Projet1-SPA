@@ -63,26 +63,29 @@ h3 {
     padding: 15px 0px 7px;
 }   
 
-.descriptif1 {
+.descriptif1, .descriptif2 {
     width: 100%;
     padding: 15px 3px 5px 3px;
-}
-
-.descriptif2 {
-    width: 100%;
-    padding: 15px 3px 5px 3px;
-    text-align: end;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .individuel p {
     margin: 3px;
+    margin: 17px 0;
     
 }
 
-.buttons {
-    width: 50%;
-    margin: 5% auto;
-    padding: 25px 10px 15px 0px;
+.individuel button {
+    border-radius: 2.5ch;
+    border: 2px solid var(--dark);
+    color: var(--dark);
+    box-shadow: 0 0 8px var(--dark);
+    margin: 13px 0;
+    padding: 8px 15px;
+    cursor: pointer;
 }
 
 .individuel:nth-child(even) img{
@@ -105,7 +108,10 @@ h3 {
     grid-template-columns: 1fr 1fr;
     margin-left: 25px;    
 }
- 
+
+.descriptif2{
+    text-align: right;
+}
 }
 @media screen and (min-width: 1000px) {
 
@@ -156,12 +162,4 @@ hr {
     width: 0px;
 }
 
-.descriptif1 .buttons {
-    display: flex;
-    justify-content: center;
-}
-
-.buttons {
-    margin: 15px;
-}
 }
