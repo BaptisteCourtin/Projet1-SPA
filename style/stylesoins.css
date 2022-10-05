@@ -40,12 +40,6 @@ p {
     overflow: hidden;
 }
 
-.panier {
-    width: max-content;
-    margin: 10px;
-
-}
-
 .textbuy {
     display: flex;
     flex-direction: column;
@@ -67,7 +61,14 @@ p {
     color: var(--dark);
     box-shadow: 0 0 8px var(--dark);
     opacity: 80%;
+    width: max-content;
+    margin: 10px;
 
+}
+.buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media screen and (min-width: 900px) {
@@ -80,17 +81,11 @@ p {
     }
 
     .soins img {
-        /*  width: 100%;
-        
-        object-fit: cover;} */
         object-position: 30% 35%;
         height: 100%;
     }
 
-
-
     .massage2 {
-
         max-height: 35vh;
         display: flex;
         flex-direction: row-reverse;
@@ -99,7 +94,6 @@ p {
         padding-top: 50px;
         padding-left: 50px;
         padding: 25px;
-
     }
 
     .border {
@@ -150,4 +144,24 @@ p {
 
     }
 
+.panier ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    color: #00002e;
+    border-radius: 1.5ch;
+    padding: 10px;
+    font-size: large;
+}
+.date {
+    display: flex;
+    flex-direction: row;
+    gap: .8vw;
+}
+.buy , .buy2 {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
 }
