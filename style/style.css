@@ -49,6 +49,7 @@ body {
 
 .skipper {
     display: none;
+    z-index: 12;
 }
 
 /* --------------------------------- */
