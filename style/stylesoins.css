@@ -27,6 +27,7 @@
 .massage3 {
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 25px;
 
 }
@@ -35,15 +36,8 @@ p {
     padding-left: 10px;
     margin-bottom: 70px;
     height: max-content;
-    overflow: scroll;
     margin-bottom: 0;
     overflow: hidden;
-}
-
-.panier {
-    width: max-content;
-    margin: 10px;
-
 }
 
 .textbuy {
@@ -51,28 +45,49 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex: 1;
 }
 
+.panier1, .panier2, .panier3 {
+
+    display: flex;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    max-width: 17vw;
+    border-radius: 2.5ch;
+    border: 2px solid var(--dark);
+    color: var(--dark);
+    box-shadow: 0 0 8px var(--dark);
+    opacity: 80%;
+    width: max-content;
+    margin: 10px;
+
+}
+
+.buy , .buy2 {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
 
 @media screen and (min-width: 900px) {
 
     .soins .image {
-        max-width: 60vw;
+        height: 30vh;
         border-radius: 1.5ch;
         overflow: hidden;
         box-shadow: 5px 9px 11px 0px #A6A6A6;
     }
 
     .soins img {
-        width: 100%;
-        object-fit: cover;
-        object-position: 10% 20%;
-
+        object-position: 30% 35%;
+        height: 100%;
     }
 
     .massage2 {
-
         max-height: 35vh;
         display: flex;
         flex-direction: row-reverse;
@@ -81,7 +96,6 @@ p {
         padding-top: 50px;
         padding-left: 50px;
         padding: 25px;
-
     }
 
     .border {
@@ -127,11 +141,29 @@ p {
         align-items: center;
     }
 
-    .panier {
-        width: max-content;
-        margin: 10px;
-        display: flex;
+    .panier1,.panier2,.panier3 {
+        padding: 8px 15px;
 
     }
 
+.panier1 ul, .panier2 ul, .panier3 ul {
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    color: #00002e;
+    border-radius: 1.5ch;
+    padding: 10px;
+    font-size: large;
+}
+.date {
+    display: flex;
+    flex-direction: row;
+    gap: .8vw;
+}
+.buy , .buy2 {
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
 }
