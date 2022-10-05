@@ -5,8 +5,8 @@
     --red: #ff331f;
     --light: #fbfbfb;
 
-    --ffh1: 'MedievalSharp', serif;
-    --ffh2: 'Lora', serif;
+    --ffh1: "MedievalSharp", serif;
+    --ffh2: "Lora", serif;
     --ffbasique: sans-serif;
 
     --fsh1: 3rem;
@@ -41,6 +41,14 @@ body {
     color: var(--darkblue);
     background-color: var(--light);
     font-family: var(--ffbasique);
+}
+
+/* --------------------------------- */
+/* -------------skipper------------- */
+/* --------------------------------- */
+
+.skipper {
+    display: none;
 }
 
 /* --------------------------------- */
@@ -85,6 +93,7 @@ button.mobile-nav-toggle {
     background-color: var(--light);
     padding: 0.5rem;
     border-radius: 10px;
+    border: 1px solid var(--dark);
 }
 
 .side-nav {
@@ -108,6 +117,7 @@ body.opened::before {
     position: fixed;
     inset: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    z-index: 1;
 }
 
 .side-nav ul {
@@ -123,6 +133,7 @@ body.opened::before {
     text-align: center;
     border-top: 2px solid var(--darkblue);
     font-size: 1.2rem;
+    line-height: 3rem;
 }
 
 .side-nav ul li:first-child {
@@ -130,8 +141,7 @@ body.opened::before {
 }
 
 .side-nav a {
-    line-height: 3rem;
-    padding: 0em 0.5em;
+    padding: 0rem 1rem;
 }
 
 header .side-right {
@@ -139,11 +149,17 @@ header .side-right {
     gap: 1rem;
 }
 
+header .side-right .fa-droplet{
+    display: none;
+}
+
+header .fa-spa,
 header .side-right .fa-user,
 header .side-right .fa-cart-shopping {
     background-color: var(--light);
     padding: 0.5rem;
     border-radius: 10px;
+    border: 1px solid var(--dark);
 }
 
 /* --- */
@@ -164,6 +180,26 @@ body.opened .fa-xmark {
     display: block;
 }
 
+/* --- */
+
+.sideCart {
+    display: none;
+}
+
+.sideCart.opened {
+    display: block;
+    text-align: center;
+    position: fixed;
+    padding: 1.5rem;
+    inset: 4rem 2rem auto auto;
+    width: 250px;
+
+    background-color: white;
+    color: var(--dark);
+    border-radius: 10px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+    z-index: 9;
+}
 
 /* --------------------------------- */
 /* --------image-principale--------- */
@@ -185,9 +221,17 @@ body.opened .fa-xmark {
     align-items: center;
 }
 
+.main-image::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    background: linear-gradient(to top, var(--light), transparent);
+}
+
 h1 {
     font-family: var(--ffh1);
-    /* font-size: var(--fsh1); */
     font-size: clamp(2.35rem, 10vw, 4.5em);
     font-weight: var(--fw700);
     text-shadow: 3px 3px 2px var(--dark);
@@ -197,7 +241,6 @@ h1 {
     max-width: 20rem;
     text-shadow: 1.5px 1.5px 2px var(--dark);
 }
-
 
 /* --------------------------------- */
 /* ------------bot-navbar----------- */
@@ -217,6 +260,7 @@ section.bot-navbar {
     background-color: var(--light);
     padding: 0.5rem;
     border-radius: 10px;
+    border-top: 1px solid var(--dark);
 }
 
 /* --------------------------------- */
@@ -248,13 +292,14 @@ footer .icons-applis {
 .icons-applis i {
     padding: 0.25rem;
     font-size: 2rem;
+
+    transition: linear 0.3s;
 }
 
 footer .copyright {
     font-size: 0.6rem;
+    text-align: center;
 }
-
-
 
 /* --------------------------------- */
 /* ------------Responsive----------- */
@@ -268,8 +313,40 @@ Tablette en paysage (1024px à 1112px) - Idem, mais aussi tablettes 12" en portr
 Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais généralement de 1200px et plus.
 */
 
-
 @media screen and (min-width: 800px) {
+    /* -------------skipper------------- */
+    .skipper {
+        display: block;
+        background-color: var(--dark);
+        color: var(--light);
+        font-size: 1.5rem;
+        padding: 0.5rem;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-150%);
+    }
+
+    .skipper:focus {
+        transform: translateY(0);
+    }
+
+    /* -------------boutique------------- */
+    .sideCart.opened {
+        display: block;
+        text-align: center;
+        position: absolute;
+        padding: 1.5rem;
+        inset: 4rem 2rem auto auto;
+        width: 250px;
+
+        background-color: white;
+        color: var(--dark);
+        border-radius: 10px;
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+        z-index: 9;
+    }
 
     /* ---------------header------------ */
     header {
@@ -291,7 +368,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
 
     .nav-flex .logo {
         display: block;
-        padding-right: 2rem;
+        margin-right: 2rem;
         flex-shrink: 1;
     }
 
@@ -328,6 +405,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         font-size: 1rem;
         font-family: var(--ffh2);
         text-shadow: 0px 0px 8px var(--dark);
+        line-height: 0rem;
     }
 
     header .side-right {
@@ -335,9 +413,13 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         gap: 1rem;
     }
 
+    header .fa-spa,
     header .side-right .fa-user,
     header .side-right .fa-cart-shopping {
         background-color: transparent;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        transition: ease-in 0.3s;
     }
 
     .main-image p {
@@ -374,14 +456,17 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
     .footer nav ul li {
         width: 100%;
         text-align: center;
-        border-top: none;
     }
 
     /* --------------------------------- */
     /* -------------Animation----------- */
     /* --------------------------------- */
-    header i:hover {
-        color: var(--darkblue);
+
+
+    header .side-right .fa-user:hover,
+    header .side-right .fa-cart-shopping:hover,
+    header .fa-spa:hover {
+        border: 2px solid var(--light);
     }
 
     .footer .icons-applis a i:hover {
@@ -389,15 +474,181 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         background-color: var(--darkblue);
     }
 
-    .footer nav ul li:hover {
+    .footer nav ul li a:hover {
         text-decoration: underline;
     }
 
-    header ul li:hover {
-        color: var(--darkblue);
-        text-shadow: none;
+
+    /* ----- */
+
+    header .side-nav ul li a {
+        position: relative;
+        padding: 0.25rem;
+        border: none;
+    }
+
+    header .side-nav ul a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+
+        border-radius: 10px;
+        border-bottom: 2px solid transparent;
+        border-left: 2px solid transparent;
+        transition: linear 0.3s;
+    }
+
+    header .side-nav ul li a::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+
+        border-radius: 10px;
+        border-top: 2px solid transparent;
+        border-right: 2px solid transparent;
+        transition: linear 0.3s;
+    }
+
+    header .side-nav ul li:hover a::after,
+    header .side-nav ul li:hover a::before {
+        border-color: var(--light);
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* --------------------------------- */
+    /* -------------USER PLOUF---------- */
+    /* --------------------------------- */
+
+    header .side-right .fa-user.jump {
+        animation: jump 3s linear;
+    }
+
+    .side-right {
+        position: relative;
+    }
+
+    header .side-right .fa-droplet{
+        display: block;
+    }
+
+    header .side-right .droplet1 {
+        opacity: 0;
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        color: var(--light);
+        transform: rotate(210deg);
+    }
+
+    header .side-right .droplet2 {
+        opacity: 0;
+        position: absolute;
+        top: 100px;
+        right: 110px;
+        color: var(--light);
+        transform: rotate(140deg);
+    }
+
+    header .side-right .droplet1.drop1 {
+        animation: drop1 3s linear;
+    }
+
+    header .side-right .droplet2.drop2 {
+        animation: drop2 3s linear;
+    }
+
+
+    @keyframes jump {
+        0% {
+            transform: rotate(-50deg);
+        }
+
+        20% {
+            transform: translate(-60px, 50px) rotate(-120deg);
+        }
+
+        40% {
+            transform: translate(-100px, 100px) rotate(-180deg);
+            opacity: 1;
+        }
+
+        41% {
+            transform: translate(-100px, 100px) rotate(-180deg);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translate(-100px, 100px) rotate(-180deg);
+            opacity: 0;
+        }
+    }
+
+    @keyframes drop1 {
+        0% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        40.5% {
+            opacity: 1;
+            transform: translate(0, 0) rotate(210deg);
+        }
+
+        75% {
+            transform: translate(10px, -10px) rotate(350deg);
+        }
+
+        95% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(20px, 0px) rotate(360deg);
+        }
+    }
+
+    @keyframes drop2 {
+        0% {
+            opacity: 0;
+        }
+
+        40% {
+            opacity: 0;
+        }
+
+        40.5% {
+            opacity: 1;
+            transform: translate(0, 0) rotate(140deg);
+        }
+
+        75% {
+            transform: translate(-10px, -10px) rotate(10deg);
+        }
+
+        95% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+            transform: translate(-20px, 0px) rotate(0deg);
+        }
     }
 }
+
+
 
 @media screen and (min-width: 930px) {
     header .side-nav ul li {
