@@ -11,7 +11,7 @@ const onSubmit = (e) => {
 
 const ratingStars = [...document.getElementsByClassName("fa-star")];
 
-function rating(stars) {
+const rating = (stars) => {
     const starClassActive = "fa fa-star gold";
     const starClassInactive = "fa fa-star";
     let i;
