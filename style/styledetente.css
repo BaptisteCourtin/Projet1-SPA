@@ -2,13 +2,14 @@
     box-shadow: -5px 9px 11px 0px #A6A6A6;
     border-radius: 20px;
     padding: 3vh;
-    margin: 4rem 0;
+    margin: 2vh 5vw;
+    height: 30vh;
 }
 
 .detente i {
     font-size: 2rem;
     text-align: center;
-    padding: 2rem 0 0;
+    padding-top: 2vh;
     color: var(--dark)
 }
 
@@ -111,9 +112,18 @@ main p {
         margin-bottom: 10px;
     }
 
+    .textblock i {
+        padding: 2rem 0 0;
+    }
+
     .imgdetente {
         max-height: 45vh;
         width: 70vw;
         flex-grow: 3;
+    }
+
+    .card {
+        margin: 5vh 0;
+        height: 40vh;
     }
 }
