@@ -1,3 +1,44 @@
+:root {
+    --brdR: 5px;
+    --brdForm: 2px solid grey;
+    --formW: clamp(200px, 70vw, 700px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+
+}
+
+.openHours,
+.rating,
+.map {
+    margin-bottom: 5vh;
+}
+
+h3 {
+    color: var(--dark);
+    font-family: var(--ffh2);
+    padding: 1rem;
+    text-align: center;
+}
+
+iframe {
+    width: clamp(200px, 80vw, 500px);
+}
+
+.openHours ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.openHours ul li {
+    margin: 1vh 0;
+}
+
 .fa-star {
     color: lightgrey;
     cursor: pointer;
@@ -9,6 +50,7 @@
     font-size: 2rem;
 }
 
+
 .rating:hover .fa-star {
     color: #ffdc0f;
 }
@@ -17,47 +59,36 @@
     color: lightgray;
 }
 
-main {
+.contact form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
-
-}
-
-iframe {
-    width: 80vw;
-}
-
-h3 {
-    padding: 1rem;
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
-    width: 70vw;
+    width: var(--formW);
 }
 
 input {
-    height: 6vh;
+    height: 7vh;
+}
+
+.inputbox {
+    position: relative;
     width: 100%;
-    padding: 1rem;
 }
 
 .name {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 1em;
+    width: var(--formW);
 }
 
 textarea {
     height: 15vh;
-    padding: 1rem;
-    font-family: sans-serif;
     resize: none;
+
 }
 
 button {
@@ -66,23 +97,80 @@ button {
     align-self: center;
 }
 
+form span {
+    position: absolute;
+    left: 0;
+    margin: 2vh;
+    pointer-events: none;
+    color: grey;
+    transition: 0.5s;
+    padding: 0;
+
+}
+
 textarea,
 input {
     border: 1px solid grey;
+    background-color: var(--light);
+    border-radius: var(--brdR);
+    outline: none;
+    font-family: var(--ffbasique);
+    padding: 2vh 1.5vh;
+    width: 100%;
 }
 
-h3 {
-    color: var(--dark);
-    font-family: 'lora', serif;
+textarea:valid~span,
+textarea:focus~span,
+input:valid~span,
+input:focus~span {
+    color: grey;
+    font-weight: 600;
+    transform: translateX(3vh);
+    transform: translateY(-3vh);
+    background-color: var(--light);
+    padding: 0 2vh;
+    border-left: var(--brdForm);
+    border-right: var(--brdForm);
+    border-radius: var(--brdR);
 }
 
-@media screen and (min-width: 700px) {
-    form {
-        width: 50vw;
-    }
+textarea:valid,
+textarea:focus,
+input:valid,
+input:focus {
+    border: var(--brdForm);
+}
 
-    iframe {
-        width: 40vw;
-    }
+dialog {
+    width: clamp(300px, 70vh, 800px);
+    margin: 5vh auto;
+    border-radius: var(--brdR);
+    border: 1px solid var(--dark);
+    background-image: url(../assets/pattern_waves-4_0.5_2_0-0_0_1__ffffff_8059d417.png);
+    background-color: var(--light);
+    background-position: 20% 0;
+}
 
+dialog p {
+    width: 50%;
+    text-align: center;
+}
+
+dialog h3 {
+    font-size: 1.4rem;
+    padding: 0;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+button {
+    border-radius: var(--brdR);
+    border: 1px solid var(--dark);
 }
