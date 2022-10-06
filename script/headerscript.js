@@ -54,7 +54,7 @@ fetch("../pages/header.html")
         }
 
         // --- session storage ---
-        for (let j = 0; j < sessionStorage.length - 2; j++) {
+        for (let j = 0; j < sessionStorage.length - 1; j++) {
             // -2 car nb et un truc de base
             const ulCart = document.querySelector(".sideCart");
             const newInCart = document.createElement("li");
