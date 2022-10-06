@@ -6,6 +6,8 @@ const selectDate = (dateSelected) => {
     dateSelected.innerHTML = `Réservation confirmée pour :</br> ${
       document.getElementById("choice1").value
     }`;
+    ajout.style.boxShadow = `0 0 8px green`;
+    ajout.style.border = "none";
   } else if (document.getElementById("choice2").checked) {
     dateSelected.innerHTML = `Réservation confirmée pour :</br> ${
       document.getElementById("choice2").value
@@ -48,6 +50,8 @@ const selectDate3 = (dateSelected) => {
 };
 ajout.addEventListener("click", function () {
   selectDate(ajout);
+  // ajout.style.boxShadow = `0 0 8px green`;
+  // ajout.style.border = "none";
 });
 ajout2.addEventListener("click", function () {
   selectDate2(ajout2);
