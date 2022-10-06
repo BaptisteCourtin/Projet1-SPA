@@ -27,6 +27,7 @@ h3 {
 
 iframe {
     width: clamp(200px, 80vw, 500px);
+    border-radius: 20px;
 }
 
 .openHours ul {
