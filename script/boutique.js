@@ -1,6 +1,6 @@
+let nvxButton = document.querySelectorAll(".valide");
 
-const nvxButton = document.getElementById("valide");
-
-nvxButton.addEventListener('click', function (){
-nvxButton.innerHTML= "C'est Ajouté!";
-});
+    for (let i = 0 ; i < nvxButton.length ; i ++){
+        nvxButton[i].addEventListener("click", function (){
+            nvxButton[i].innerHTML= "C'est Ajouté!";
+})};
