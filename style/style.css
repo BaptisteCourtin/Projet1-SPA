@@ -49,6 +49,7 @@ body {
 
 .skipper {
     display: none;
+    z-index: 12;
 }
 
 /* --------------------------------- */
@@ -149,7 +150,7 @@ header .side-right {
     gap: 1rem;
 }
 
-header .side-right .fa-droplet{
+header .side-right .fa-droplet {
     display: none;
 }
 
@@ -224,9 +225,9 @@ body.opened .fa-xmark {
 .main-image::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     width: 100%;
-    height: 110px;
+    height: 120px;
     background: linear-gradient(to top, var(--light), transparent);
 }
 
@@ -462,7 +463,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
     /* -------------Animation----------- */
     /* --------------------------------- */
 
-
     header .side-right .fa-user:hover,
     header .side-right .fa-cart-shopping:hover,
     header .fa-spa:hover {
@@ -478,7 +478,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         text-decoration: underline;
     }
 
-
     /* ----- */
 
     header .side-nav ul li a {
@@ -488,7 +487,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
     }
 
     header .side-nav ul a::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         bottom: 0;
@@ -502,7 +501,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
     }
 
     header .side-nav ul li a::after {
-        content: '';
+        content: "";
         position: absolute;
         right: 0;
         top: 0;
@@ -522,7 +521,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         height: 100%;
     }
 
-
     /* --------------------------------- */
     /* -------------USER PLOUF---------- */
     /* --------------------------------- */
@@ -535,7 +533,7 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         position: relative;
     }
 
-    header .side-right .fa-droplet{
+    header .side-right .fa-droplet {
         display: block;
     }
 
@@ -564,7 +562,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
     header .side-right .droplet2.drop2 {
         animation: drop2 3s linear;
     }
-
 
     @keyframes jump {
         0% {
@@ -647,8 +644,6 @@ Ecrans d'ordinateurs portables et de bureau (>1200px) - Varie beaucoup, mais gé
         }
     }
 }
-
-
 
 @media screen and (min-width: 930px) {
     header .side-nav ul li {
