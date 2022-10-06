@@ -43,6 +43,7 @@ h3 {
 }
 
 .individuel {
+    background-color: var(--light);
     width: 90%;
     display: flex;
     justify-content:start;
@@ -119,11 +120,12 @@ h3, p {
 }
 
 .produit .individuel:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
+    
 }
 
 .produit .individuel{
-    transition-duration: 1s;
+    transition-duration: 1.5s;
     transition-timing-function:ease-in-out;
 }
 
