@@ -3,6 +3,7 @@
     border-radius: 20px;
     padding: 3vh;
     margin: 4rem 0;
+    transition: 0.5s ease-in-out;
 }
 
 .detente i {
@@ -26,9 +27,7 @@
     box-shadow: -5px 9px 20px 0px #A6A6A6;
 }
 
-.card {
-    transition: 0.5s ease-in-out;
-}
+
 
 img {
     width: 100%;
