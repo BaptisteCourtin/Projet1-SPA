@@ -173,6 +173,7 @@ p {
     width: max-content;
     margin: 10px;
     align-self: center;
+    cursor: pointer;
 }
 .buy, .buy2 {
     display: flex;
