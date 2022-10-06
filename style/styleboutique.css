@@ -53,6 +53,8 @@ h3 {
     gap: 1rem;
     border-radius: 10px;
     box-shadow: 5px 9px 11px #A6A6A6;
+    transition-duration: 1s;
+    transition-timing-function:ease-in-out;
 }
 
 .produit {
@@ -65,17 +67,26 @@ h3 {
 
 .descriptif1, .descriptif2 {
     width: 100%;
-    padding: 15px 3px 5px 3px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
-.individuel p {
-    margin: 3px;
-    margin: 17px 0;
-    
+.descriptif1{
+    padding: 15px 15px 5px 0;
+}
+
+.descriptif2{
+    padding: 15px 3px 5px 15px;
+    text-align: center;
+}
+
+h3, p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .individuel button {
@@ -83,7 +94,7 @@ h3 {
     border: 2px solid grey;
     color: var(--dark);
     box-shadow: 0 0 8px var(--dark);
-    margin: 13px 0;
+    margin: 35px 0 25px 0;
     padding: 8px 15px;
     cursor: pointer;
 }
@@ -157,9 +168,4 @@ img {
     text-align: start;
     order: 2;
 }
-
-hr {
-    width: 0px;
-}
-
 }
