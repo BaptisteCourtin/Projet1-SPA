@@ -65,13 +65,13 @@
         </div>
         <div class="contact">
             <h3>Contactez-nous</h3>
-            <form>
+            <form onsubmit="onSubmit(event)">
                 <div class="name">
                     <div class="inputbox">
                         <input type="text" required="required" class="name-surname">
                         <span>Nom</span>
                     </div>
-                    <div class="inputbox"><input type="text" required="required" class="name-surname">
+                    <div class="inputbox"><input type="text" required="required" class="name-surname" id="firstname">
                         <span>Prénom</span>
                     </div>
                 </div>
@@ -83,8 +83,8 @@
         <dialog id="msgSent">
             <form>
                 <h3>Message envoyé <i class="fa-regular fa-circle-check"></i></h3>
-                <p class="msg">
-                    Merci pour votre message, il sera traité dans les plus brefs délais!
+                <p id="pmsg">
+
                 </p>
 
                 <button id="close">Fermer</button>

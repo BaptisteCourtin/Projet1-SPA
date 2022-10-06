@@ -8,7 +8,8 @@
 .detente i {
     font-size: 2rem;
     text-align: center;
-    padding: 2rem 0;
+    padding: 2rem 0 0;
+    color: var(--dark)
 }
 
 
@@ -55,10 +56,10 @@ img {
 .textblock {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 0 16px;
     flex: 1;
-
+    text-align: center;
 }
 
 main {
@@ -87,21 +88,32 @@ main p {
 
 }
 
-.exterieur div,
-.jacuzzi div {
-    text-align: right;
-}
+
+
 
 @media screen and (min-width: 800px) {
+
+    .exterieur .textblock,
+    .jacuzzi .textblock {
+        align-items: flex-end;
+    }
+
     .textblock {
         justify-content: center;
         flex-shrink: 1;
     }
 
+    .textblock p,
+    .textblock h3,
+    .textblock i {
+        text-align: center;
+        width: 60%;
+        margin-bottom: 10px;
+    }
 
     .imgdetente {
         max-height: 45vh;
         width: 70vw;
-        flex-grow: 2;
+        flex-grow: 3;
     }
 }
