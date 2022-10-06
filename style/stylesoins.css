@@ -26,7 +26,7 @@
 .massage2,
 .massage3 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     padding: 25px;
 
@@ -52,10 +52,10 @@ p {
 .panier1, .panier2, .panier3 {
 
     display: flex;
-    padding: 4px;
+    padding: 8px 15px;
     justify-content: center;
     align-items: center;
-    max-width: 17vw;
+    max-width: 70vw;
     border-radius: 2.5ch;
     border: 2px solid var(--dark);
     color: var(--dark);
@@ -66,14 +66,22 @@ p {
 
 }
 
-.buy , .buy2 {
-    display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.date {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: .8vw;
+    font-size: small;
+    grid-template-rows: 3.5vh 3.5vh 3.5vh;
+    align-items: center;
 }
-
-@media screen and (min-width: 900px) {
+.buy, .buy2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+@media screen and (min-width: 800px) {
 
     .soins .image {
         height: 30vh;
@@ -141,29 +149,38 @@ p {
         align-items: center;
     }
 
-    .panier1,.panier2,.panier3 {
-        padding: 8px 15px;
+.date {
+    font-size: large;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1vw 5fr;
+    gap: .8vw;
+    grid-template-rows: 4vh 2vh 4vh;
+}
 
-    }
+.panier1, .panier2, .panier3 {
 
-.panier1 ul, .panier2 ul, .panier3 ul {
+    display: flex;
+    padding: 8px 15px;
+    justify-content: center;
+    align-items: center;
+    max-width: 17vw;
+    border-radius: 2.5ch;
+    border: 2px solid var(--dark);
+    color: var(--dark);
+    box-shadow: 0 0 8px var(--dark);
+    opacity: 80%;
+    width: max-content;
+    margin: 10px;
+    align-self: center;
+}
+.buy, .buy2 {
     display: flex;
     flex-direction: column;
-    text-decoration: underline;
-    color: #00002e;
-    border-radius: 1.5ch;
-    padding: 10px;
-    font-size: large;
+    justify-content: center;
+    margin-bottom: 2vh;
 }
-.date {
-    display: flex;
-    flex-direction: row;
-    gap: .8vw;
-}
-.buy , .buy2 {
-    display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+h3 {
+    margin-bottom: 5px;
 }
 }
