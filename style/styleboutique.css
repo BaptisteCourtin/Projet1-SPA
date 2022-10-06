@@ -21,10 +21,6 @@ body{
     color: var(--darkblue);
 }
 
-.produit .individuel:hover {
-    transform: scale(1.05);
-}
-
 .individuel .images {
     height: 100%;
     width: 75%;
@@ -47,6 +43,7 @@ h3 {
 }
 
 .individuel {
+    background-color: var(--light);
     width: 90%;
     display: flex;
     justify-content:start;
@@ -65,25 +62,34 @@ h3 {
 
 .descriptif1, .descriptif2 {
     width: 100%;
-    padding: 15px 3px 5px 3px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
-.individuel p {
-    margin: 3px;
-    margin: 17px 0;
-    
+.descriptif1{
+    padding: 15px 15px 5px 0;
+}
+
+.descriptif2{
+    padding: 15px 3px 5px 15px;
+    text-align: center;
+}
+
+h3, p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .individuel button {
     border-radius: 2.5ch;
-    border: 2px solid var(--dark);
+    border: 2px solid grey;
     color: var(--dark);
     box-shadow: 0 0 8px var(--dark);
-    margin: 13px 0;
+    margin: 35px 0 25px 0;
     padding: 8px 15px;
     cursor: pointer;
 }
@@ -112,6 +118,17 @@ h3 {
 .descriptif2{
     text-align: right;
 }
+
+.produit .individuel:hover {
+    transform: scale(1.2);
+    
+}
+
+.produit .individuel{
+    transition-duration: 1.5s;
+    transition-timing-function:ease-in-out;
+}
+
 }
 @media screen and (min-width: 1000px) {
 
@@ -157,9 +174,4 @@ img {
     text-align: start;
     order: 2;
 }
-
-hr {
-    width: 0px;
-}
-
 }
