@@ -1,3 +1,4 @@
+// mise en place du Ajax : Amélie
 fetch("../pages/header.html")
     .then((response) => {
         return response.text();
@@ -6,6 +7,7 @@ fetch("../pages/header.html")
         document.querySelector("header").innerHTML = data;
     })
     .then(() => {
+        // Baptiste
         // ---side nav---
         const navToggle = document.querySelector(".mobile-nav-toggle");
         const sideNav = document.querySelector(".side-nav");
@@ -45,27 +47,18 @@ fetch("../pages/header.html")
             audio.play();
         };
 
-        // ---open panier---
-        let ajout = document.querySelectorAll(".panier");
-        for (let i = 0; i < ajout.length; i++) {
-            ajout[i].addEventListener("click", function () {
-                ajout[i].innerHTML = "Ajouté !";
-            });
-        }
-
         // --- session storage ---
         for (let j = 0; j < sessionStorage.length - 1; j++) {
-            // -2 car nb et un truc de base
             const ulCart = document.querySelector(".sideCart");
             const newInCart = document.createElement("li");
             data = sessionStorage.getItem(`item[${j}]`); //donne la value
 
             newInCart.innerHTML = `${data}`;
-            console.log();
             ulCart.appendChild(newInCart);
         }
     });
 
+// Amélie
 fetch("../pages/footer.html")
     .then((response) => {
         return response.text();

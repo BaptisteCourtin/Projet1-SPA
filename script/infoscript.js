@@ -1,3 +1,4 @@
+// Amélie
 const msgSent = document.getElementById("msgSent");
 const pmsg = document.getElementById("pmsg");
 
