@@ -1,3 +1,11 @@
+/*
+Enlever width image
+overflow hidden sur div class="images"
+différencier les div class="images" en fonction de si l'image
+est à gauche ou à droite et appliquer une border-radius
+*/
+
+
 :root {
     --dark: #0d0106;
     --darkblue: #00002e;
@@ -126,6 +134,20 @@ p {
     .produit .individuel {
         transition-duration: 1.5s;
         transition-timing-function: ease-in-out;
+    }
+
+    .descriptif1, .descriptif2{
+        padding: 0, 15px, 5, 0;
+        height: 90%;
+        margin: 0;
+    }
+
+    .individuel button{
+        padding-bottom: 15px;
+    }
+    
+    p {
+        padding-top: 10px;
     }
 }
 @media screen and (min-width: 1000px) {
