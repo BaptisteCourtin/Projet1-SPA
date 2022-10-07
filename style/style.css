@@ -185,6 +185,25 @@ body.opened .fa-xmark {
 
 .sideCart {
     display: none;
+    font-family: var(--ffbasique);
+    font-weight: 500;
+
+    scroll-behavior: auto;
+    overflow-y: scroll;
+}
+
+.sideCart::-webkit-scrollbar {
+    width: 15px;
+}
+
+.sideCart::-webkit-scrollbar-track {
+    background-color: rgb(230, 230, 230);
+    border-radius: 0 8px 8px 0;
+}
+
+.sideCart::-webkit-scrollbar-thumb {
+    background-color: rgb(176, 176, 176);
+    border-radius: 20px;
 }
 
 .sideCart.opened {
@@ -194,12 +213,19 @@ body.opened .fa-xmark {
     padding: 1.5rem;
     inset: 4rem 2rem auto auto;
     width: 250px;
+    height: 300px;
 
     background-color: white;
     color: var(--dark);
     border-radius: 10px;
+    border: 2px solid var(--dark);
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
     z-index: 9;
+}
+
+.sideCart li {
+    margin: 0.5rem;
+    border-bottom: 1px solid var(--dark);
 }
 
 /* --------------------------------- */
