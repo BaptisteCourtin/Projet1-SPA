@@ -137,17 +137,28 @@ p {
     }
 
     .descriptif1, .descriptif2{
+        display: flex;
+        justify-content: space-between;
         padding: 0, 15px, 5, 0;
         height: 90%;
         margin: 0;
     }
 
-    .individuel button{
-        padding-bottom: 15px;
-    }
-    
     p {
-        padding-top: 10px;
+        padding-top: 15px;
+    }
+
+    h3{
+        padding-top: 20px;
+    }
+
+    .buttons {
+        padding-bottom: 10px;
+        margin: 0;
+    }
+
+    .valide {
+        margin:0;
     }
 }
 @media screen and (min-width: 1000px) {
