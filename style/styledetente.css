@@ -1,5 +1,5 @@
 .card {
-    box-shadow: -5px 9px 11px 0px #A6A6A6;
+    box-shadow: -5px 9px 11px 0px #a6a6a6;
     border-radius: 20px;
     padding: 3vh;
     margin: 2vh 5vw;
@@ -11,9 +11,8 @@
     font-size: 2rem;
     text-align: center;
     padding-top: 2vh;
-    color: var(--dark)
+    color: var(--dark);
 }
-
 
 .imgdetente {
     min-height: 120px;
@@ -25,17 +24,14 @@
 
 .card:hover {
     transform: scale(1.02);
-    box-shadow: -5px 9px 20px 0px #A6A6A6;
+    box-shadow: -5px 9px 20px 0px #a6a6a6;
 }
-
-
 
 img {
     width: 100%;
     border-radius: 20px;
     object-fit: cover;
     object-position: 30% 30%;
-
 }
 
 .jacuzzi img {
@@ -85,14 +81,9 @@ main p {
 .exterieur .imgdetente,
 .jacuzzi .imgdetente {
     order: 1;
-
 }
 
-
-
-
 @media screen and (min-width: 800px) {
-
     .exterieur .textblock,
     .jacuzzi .textblock {
         align-items: flex-end;
