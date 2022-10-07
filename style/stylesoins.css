@@ -1,5 +1,5 @@
 .soins .image {
-    width: 40vw;
+    width: 70vw;
     overflow: hidden;
     flex: 2;
 }
@@ -77,6 +77,10 @@ p {
     justify-content: center;
     align-items: center;
     margin-bottom: 2vh;
+}
+h3 {
+    margin-top: 15px;
+    font-size: 17.5px;
 }
 @media screen and (min-width: 800px) {
     .soins .image {
