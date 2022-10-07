@@ -55,18 +55,6 @@ main .img3 {
 }
 
 /* --------------------------------- */
-/* -------------Animation----------- */
-/* --------------------------------- */
-
-main a .img:hover {
-    transform: scale(1.05);
-}
-
-main a .img {
-    transition: 0.5s ease-in-out;
-}
-
-/* --------------------------------- */
 /* -------------RESPONSIVE---------- */
 /* --------------------------------- */
 
@@ -87,5 +75,13 @@ main a .img {
 
     main h2 {
         font-size: 3rem;
+    }
+
+    main a .img:hover {
+        transform: scale(1.05);
+    }
+
+    main a .img {
+        transition: 0.5s ease-in-out;
     }
 }

@@ -36,7 +36,7 @@ fetch("../pages/header.html")
                 droplet1.classList.toggle("drop1");
                 droplet2.classList.toggle("drop2");
                 if (user.classList.contains("jump")) {
-                    setTimeout(soundplouf, 850);
+                    setTimeout(soundplouf, 1200);
                 }
             }
         });
