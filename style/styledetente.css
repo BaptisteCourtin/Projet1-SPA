@@ -1,16 +1,18 @@
 .card {
-    box-shadow: -5px 9px 11px 0px #A6A6A6;
+    box-shadow: 5px 9px 11px 0px #A6A6A6;
     border-radius: 20px;
     padding: 3vh;
-    margin: 4rem 0;
+    margin: 2vh 5vw;
+    height: 30vh;
+    transition: 0.5s ease-in-out;
 }
 
 .detente i {
     font-size: 2rem;
     text-align: center;
-    padding: 2rem 0;
+    padding-top: 2vh;
+    color: var(--dark);
 }
-
 
 .imgdetente {
     min-height: 120px;
@@ -22,11 +24,7 @@
 
 .card:hover {
     transform: scale(1.02);
-    box-shadow: -5px 9px 20px 0px #A6A6A6;
-}
-
-.card {
-    transition: 0.5s ease-in-out;
+    box-shadow: -5px 9px 20px 0px #a6a6a6;
 }
 
 img {
@@ -34,7 +32,6 @@ img {
     border-radius: 20px;
     object-fit: cover;
     object-position: 30% 30%;
-
 }
 
 .jacuzzi img {
@@ -55,10 +52,10 @@ img {
 .textblock {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 0 16px;
     flex: 1;
-
+    text-align: center;
 }
 
 main {
@@ -84,24 +81,40 @@ main p {
 .exterieur .imgdetente,
 .jacuzzi .imgdetente {
     order: 1;
-
-}
-
-.exterieur div,
-.jacuzzi div {
-    text-align: right;
 }
 
 @media screen and (min-width: 800px) {
+
+    .exterieur .textblock,
+    .jacuzzi .textblock {
+        align-items: flex-end;
+    }
+
     .textblock {
         justify-content: center;
         flex-shrink: 1;
     }
 
+    .textblock p,
+    .textblock h3,
+    .textblock i {
+        text-align: center;
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .textblock i {
+        padding: 2rem 0 0;
+    }
 
     .imgdetente {
         max-height: 45vh;
         width: 70vw;
-        flex-grow: 2;
+        flex-grow: 3;
+    }
+
+    .card {
+        margin: 5vh 0;
+        height: 40vh;
     }
 }

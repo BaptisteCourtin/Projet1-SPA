@@ -1,19 +1,19 @@
-const validator = require('html-validator');
-const { readFileSync } = require('fs');
+const validator = require("html-validator");
+const { readFileSync } = require("fs");
 function validate(page) {
     (async () => {
         const options = {
             data: page,
-            format: 'text'
-        }
+            format: "text",
+        };
 
         try {
-            const result = await validator(options)
-            console.log(result)
+            const result = await validator(options);
+            console.log(result);
         } catch (error) {
-            console.error(error)
+            console.error(error);
         }
-    })()
+    })();
 }
-validate('../pages/index.html');
-validate('./pages/info.html');
+validate("../pages/index.html");
+validate("./pages/info.html");

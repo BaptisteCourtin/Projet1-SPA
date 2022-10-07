@@ -54,33 +54,18 @@ main .img3 {
     background-size: cover;
 }
 
-
-/* --------------------------------- */
-/* -------------Animation----------- */
-/* --------------------------------- */
-
-main a .img:hover {
-    transform: scale(1.05);
-}
-
-main a .img {
-    transition: 0.5s ease-in-out;
-}
-
-
 /* --------------------------------- */
 /* -------------RESPONSIVE---------- */
 /* --------------------------------- */
 
 @media screen and (min-width: 800px) {
-
     /* --------------ACCEUIL------------ */
     main {
         padding-top: 3rem;
         gap: 3rem;
     }
 
-    main a{
+    main a {
         width: calc(100% - 10rem);
     }
 
@@ -90,5 +75,13 @@ main a .img {
 
     main h2 {
         font-size: 3rem;
+    }
+
+    main a .img:hover {
+        transform: scale(1.05);
+    }
+
+    main a .img {
+        transition: 0.5s ease-in-out;
     }
 }

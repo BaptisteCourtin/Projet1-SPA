@@ -9,7 +9,6 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 2rem auto;
-
 }
 
 .openHours,
@@ -27,6 +26,7 @@ h3 {
 
 iframe {
     width: clamp(200px, 80vw, 500px);
+    border-radius: 20px;
 }
 
 .openHours ul {
@@ -43,20 +43,22 @@ iframe {
     color: lightgrey;
     cursor: pointer;
     padding: 0.0625rem;
-
 }
 
 .rating p {
     font-size: 2rem;
 }
 
-
 .rating:hover .fa-star {
     color: #ffdc0f;
 }
 
-.rating .fa-star:hover~.fa-star {
+.rating .fa-star:hover ~ .fa-star {
     color: lightgray;
+}
+
+.gold {
+    color: #ffdc0f;
 }
 
 .contact form {
@@ -88,13 +90,6 @@ input {
 textarea {
     height: 15vh;
     resize: none;
-
-}
-
-button {
-    width: 100px;
-    height: 40px;
-    align-self: center;
 }
 
 form span {
@@ -105,7 +100,6 @@ form span {
     color: grey;
     transition: 0.5s;
     padding: 0;
-
 }
 
 textarea,
@@ -119,10 +113,10 @@ input {
     width: 100%;
 }
 
-textarea:valid~span,
-textarea:focus~span,
-input:valid~span,
-input:focus~span {
+textarea:valid ~ span,
+textarea:focus ~ span,
+input:valid ~ span,
+input:focus ~ span {
     color: grey;
     font-weight: 600;
     transform: translateX(3vh);
@@ -152,7 +146,8 @@ dialog {
 }
 
 dialog p {
-    width: 50%;
+    width: 65%;
+    margin: 1rem 0;
     text-align: center;
 }
 
@@ -170,7 +165,17 @@ dialog form {
     padding: 1rem;
 }
 
-button {
-    border-radius: var(--brdR);
-    border: 1px solid var(--dark);
+#close,
+#submit {
+    border-radius: 2.5ch;
+    border: var(--brdForm);
+    color: var(--dark);
+    box-shadow: 0 0 8px var(--dark);
+    opacity: 80%;
+    font-weight: 900;
+    background-color: var(--light);
+    width: 100px;
+    height: 40px;
+    align-self: center;
+    cursor: pointer;
 }
